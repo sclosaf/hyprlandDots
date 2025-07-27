@@ -44,7 +44,7 @@ set noshowmode
 
 let g:lightline = {
 	\ 'colorscheme' : 'nord',
-	\ 'activve' : {
+	\ 'active' : {
 	\ 'left' : [ [ 'mode' , 'paste' ],
 	\	     [ 'readonly' , 'filename' , 'modificed' ] ]
 	\ },
@@ -56,6 +56,11 @@ let g:lightline = {
 function! LightlineFilename()
 	return expand('%:t') !=# '' ? @% : '[No Name]'
 endfunction
+
+augroup man_settings
+	autocmd!
+	autocmd FileType man setlocal nonumber norelativenumber | setlocal foldmethod=manual
+augroup END
 
 set background=dark
 
