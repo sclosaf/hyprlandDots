@@ -1,12 +1,16 @@
 #!/bin/bash
 
-installPackages() {
-    local packages=(
-        "package1"
-        "package2"
-        "package3"
-    )
+GREEN='\033[0;32m'
+RED='\033[0;31m'
+NC='\033[0m'
 
+packages=(
+	""
+	""
+	""
+	)
+
+installPackages() {
     echo "Updating package database..."
     sudo pacman -Sy --noconfirm || {
         echo "Error updating package database"
