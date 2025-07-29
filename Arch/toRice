@@ -2,9 +2,9 @@
 - Scripts rewrite
 - WorkSpace
 - several desktop
-- Login menu
+- Login and logout  menu
 - Terminal
-- Shell Bash
+- Shell Bash? or fish?
 - Status bar top
 - App bat down
 - Desktop widget
@@ -17,4 +17,5 @@
 - Spotify and other apps
 - Remove non used environments
 - Prepare installation script
+- lazygit
 - Gestione impostazioni, switch tra desktop diversi, tenendo SUPER
