@@ -18,4 +18,5 @@
 - Remove non used environments
 - Prepare installation script
 - lazygit
-- Gestione impostazioni, switch tra desktop diversi, tenendo SUPER
+- Settings manager (both system and .config files), switch between different desktops , tenendo SUPER
+- Suspesion management
