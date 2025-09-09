@@ -9,7 +9,7 @@ packages=(
     "vim"
 )
 
-declare -A config_mapping=(
+declare -A mapping=(
     [".config/hypr"]="$HOME/.config/hypr"
     [".config/.vimrc"]="$HOME/"
 )
@@ -35,8 +35,8 @@ copyFiles()
 {
     echo -e "${GREEN}Copying configuration files...${NC}"
 
-    for source_path in "${!config_mapping[@]}"; do
-        local target_path="${config_mapping[$source_path]}"
+    for source_path in "${!_mapping[@]}"; do
+        local target_path="${mapping[$source_path]}"
         mkdir -p "$(dirname "$target_path")" || {
             echo -e "${RED}Failed to create directory for $target_path${NC}"
             continue
