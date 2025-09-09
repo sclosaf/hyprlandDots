@@ -2,6 +2,8 @@
 
 export packages=(
     "hyprland"
+    "hyprlock"
+    "hypridle"
     "neovim"
     "waybar"
     "yazi"

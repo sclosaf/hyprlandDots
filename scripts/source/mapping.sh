@@ -13,4 +13,6 @@ declare -A mapping=(
     [".config/yazi"]="$HOME/.config/yazi"
     [".config/zsh"]="$HOME/.config/zsh"
     [".config/.vimrc"]="$HOME/.vimrc"
+
+    [".wallpapers/"]="$HOME/.wallpapers"
 )
