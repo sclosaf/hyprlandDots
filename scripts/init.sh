@@ -1,42 +1,42 @@
-#!/bin/bash
+e!/bin/bash
 
 source ./source/mapping.sh
 
 main()
 {
-    echo "Copying configuration files..."
+    echo "Copying configuration file ..."
 
-    for source_path in "${!mapping[@]}"; do
-        local target_path="${mapping[$source_path]}"
+    for src in "${!mapping[@]}"; do
+        local trg="${mapping[$src]}"
 
-        if [[ -e "$target_path" ]]; then
-            echo "Removing existing $target_path..."
-            rm -rf "$target_path"
+        if [[ -e "$trg" ]]; then
+            echo "Removing existing $trg..."
+            rm -rf "$trg"
         fi
 
-        mkdir -p "$(dirname "$target_path")" || {
-            echo "Failed to create directory for $target_path"
+        mkdir -p "$(dirname "$trg")" || {
+            echo "Failed to create directory for $trg"
             continue
         }
 
-        if [[ -e "../$source_path" ]]; then
-            echo "Copying $(basename "$source_path") to $target_path..."
+        if [[ -e "../$src" ]]; then
+            echo "Copying $(basename "$src") to $trg ..."
 
-            if [[ -d "../$source_path" ]]; then
-                cp -r "../$source_path" "$(dirname "$target_path")" || {
-                    echo "Error copying directory $source_path"
+            if [[ -d "../$src" ]]; then
+                cp -r "../$src" "$(dirname "$trg")" || {
+                    echo "Error copying directory $src"
                 }
             else
-                cp "../$source_path" "$target_path" || {
-                    echo "Error copying file $source_path"
+                cp "../$src" "$trg" || {
+                    echo "Error copying file $src"
                 }
             fi
         else
-            echo -e "Warning: ../$source_path not found, skipping..."
+            echo -e "Warning: ../$src not found, skipping ..."
         fi
     done
 
-    echo -e "Operation completed!"
+    echo "Copy operation completed successfully."
 }
 
 main
