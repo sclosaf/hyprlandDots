@@ -10,7 +10,7 @@ main()
         local trg="${mapping[$src]}"
 
         if [[ -e "$trg" ]]; then
-            echo "Removing existing $trg..."
+            echo "Removing existing $trg ..."
             rm -rf "$trg"
         fi
 
