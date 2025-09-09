@@ -5,19 +5,18 @@ RESET='\033[0'
 
 usage()
 {
-    echo "
-USAGE
-\t$0 [OPTIONS]
+    echo "USAGE
+  $0 [OPTIONS]
 
 OPTIONS
-\t-h, --help\t\t\tPrint this message
-\t-i, --install\t\tInstall in the system
-\t-u, --uninstall\t\tUninstall from the system"
+  -h   --help            Print this message
+  -i   --install         Install in the system
+  -u   --uninstall       Uninstall from the system"
 }
 
 main()
 {
-    if ! ARGS=$(getopt -o 'hiu' --long 'help,install,uninstall' -n 'core.sh' -- "$@"); then
+    if ! ARGS=$(getopt -o 'hiup' --long 'help,install,uninstall,package' -n 'core.sh' -- "$@"); then
         usage
         exit 1
     fi
@@ -37,13 +36,18 @@ main()
                 exit 0
                 ;;
 
-            '-i' | '--install')
-                ./install.sh
+            '-i' | '--initialize')
+                ./init.sh
                 exit 0
                 ;;
 
             '-u' | '--uninstall')
                 ./uninstall.sh
+                exit 0
+                ;;
+
+            '-p' | '--package')
+                ./package.sh
                 exit 0
                 ;;
 
