@@ -1,6 +1,6 @@
 #!/bin/bash
 
-source source/pkgs.sh
+source ./source/pkgs.sh
 
 main()
 {
