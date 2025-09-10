@@ -25,6 +25,10 @@
 
 ### Yazi
 
+### WayTrogen
+
+- Configure animations for wallpapers
+
 ### Zen Browser
 
 ### Login and logout menu
