@@ -13,6 +13,7 @@
 - See windows and layer rules for several programs (folder rules)
 - Possible key useful bindings
 - Possible use for hyprSwitch?
+- Collaboration with Swaync
 
 ### Waybar
 
