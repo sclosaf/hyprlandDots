@@ -70,7 +70,6 @@ tooltip {
 #window,
 #clock,
 #pulseaudio,
-#pulseaudio.microphone,
 #workspaces,
 #tray,
 #memory,
@@ -165,13 +164,6 @@ tooltip {
   border-radius: 0px 0px 0px 0px;
   margin-right: 0px;
   margin-left: 0px;
-}
-
-#pulseaudio.microphone {
-    color: #cba6f7;
-    border-radius: 0px 0px 0px 0px;
-    margin-left: 0px;
-    margin-right: 0px;
 }
 
 #language {

@@ -20,7 +20,6 @@
   "modules-right": [
     "hyprland/language",
     "pulseaudio",
-    "pulseaudio#microphone",
     "clock",
     "separator",
     "tray"
