@@ -1,5 +1,7 @@
 # Ricing
 
+REMOVE EXISTING UNUSED PACKAGES OR CONFIGURATION
+
 ## TO DO
 
 ### Hyprlock
@@ -14,6 +16,7 @@
 - Possible key useful bindings
 - Possible use for hyprSwitch?
 - Collaboration with Swaync
+- Check back autostart.conf
 
 ### Waybar
 
