@@ -2,6 +2,12 @@
 
 REMOVE EXISTING UNUSED PACKAGES OR CONFIGURATION
 
+NO BLURRING OR SHADERS OR SHADOWS
+
+
+LOOK FOR MINIMAL AND QUICK TOO. SECURITY
+
+
 ## TO DO
 
 ### Hyprlock
@@ -17,6 +23,7 @@ REMOVE EXISTING UNUSED PACKAGES OR CONFIGURATION
 - Possible use for hyprSwitch?
 - Collaboration with Swaync
 - Check back autostart.conf
+- Check back Qt and environment.conf
 
 ### Waybar
 
