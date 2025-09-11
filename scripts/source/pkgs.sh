@@ -16,6 +16,7 @@ export packages=(
     "fish"
     "bash"
     "zsh"
+    "fzf"
     "ttf-jetbrains-mono-nerd"
     "brightnessctl"
 )
