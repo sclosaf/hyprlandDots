@@ -1,7 +1,5 @@
 # Ricing
 
-CONTINUE FROM appearance.conf
-
 ## TO DO
 
 ### Hyprlock
