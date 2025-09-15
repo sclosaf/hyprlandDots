@@ -15,4 +15,5 @@ declare -A mapping=(
     [".config/.vimrc"]="$HOME/.vimrc"
 
     [".wallpapers/"]="$HOME/.wallpapers"
+    [".scripts/"]="$HOME/.scripts"
 )
