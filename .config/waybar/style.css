@@ -4,10 +4,9 @@ border-radius: 0;
 font-family: "JetBrainsMono Nerd Font";
 font-weight: bold;
 font-size: 16px;
-min-height: 30px;
+min-height: 33px;
 
 }
-
 
 window#waybar {
     background: rgba(21, 18, 27, 0);
@@ -38,7 +37,7 @@ border-radius: 0px 0px 0px 0px;
 #custom-gpu-usage {
 background: #24323a;
 opacity: 0.9;
-padding: 0px 10px;
+padding: 0px 8px;
 margin-top: 8px;
 margin-bottom: 0px;
 margin-left: 0px;
@@ -46,18 +45,15 @@ margin-right: 0px;
 border-radius: 0px 10px 10px 0px;
 }
 
-
-
-
 #battery {
 background: #24323a;
 opacity: 0.9;
-padding: 0px 10px;
+padding: 0px 8px;
 margin-top: 8px;
 margin-bottom: 0px;
 margin-left: 0px;
 margin-right: 0px;
-border-radius: 0px 10px 10px 0px;
+border-radius: 0px 0px 0px 0px;
 }
 
 #pulseaudio {
@@ -74,7 +70,7 @@ border-radius: 0px 0px 0px 0px;
 #backlight {
 background: #24323a;
 opacity: 0.9;
-padding: 0px 10px;
+padding: 0px 8px;
 margin-top: 8px;
 margin-bottom: 0px;
 margin-left: 0px;
@@ -96,18 +92,18 @@ border-radius: 10px 0px 0px 10px;
 #network {
 background: #24323a;
 opacity: 0.9;
-padding: 0px 10px;
+padding: 0px 8px;
 margin-top: 8px;
 margin-bottom: 0px;
 margin-left: 0px;
 margin-right: 0px;
-border-radius: 0px 0px 0px 0px;
+border-radius: 10px 0px 0px 10px;
 }
 
 #memory {
 background: #24323a;
 opacity: 0.9;
-padding: 0px 10px;
+padding: 0px 8px;
 margin-top: 8px;
 margin-bottom: 0px;
 margin-left: 0px;
@@ -117,22 +113,22 @@ border-radius: 0px 0px 0px 0px;
 #cpu {
 background: #24323a;
 opacity: 0.9;
-padding: 0px 10px;
+padding: 0px 8px;
 margin-top: 8px;
 margin-bottom: 0px;
 margin-left: 0px;
 margin-right: 0px;
-border-radius: 0px 0px 0px 0px;
+border-radius: 10px 0px 0px 10px;
 }
 #custom-launcher {
 background: #24323a;
 opacity: 0.9;
-padding: 0px 10px;
+padding: 0px 1px 0px 8px;
 margin-top: 8px;
 margin-bottom: 0px;
 margin-left: 8px;
-margin-right: 0px;
-border-radius: 10px 0px 0px 10px;
+margin-right: 8px;
+border-radius: 10px 10px 10px 10px;
 }
 #clock{
 background: #24323a;
@@ -143,17 +139,6 @@ margin-bottom: 0px;
 margin-left: 0px;
 margin-right: 0px;
 border-radius: 10px 10px 10px 10px;
-}
-
-#custom-divider {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 10px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 0px 0px 0px 0px;
 }
 
 #custom-notification {

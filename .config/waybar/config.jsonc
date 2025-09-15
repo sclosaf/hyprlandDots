@@ -7,13 +7,13 @@
     "height": "20",
     "gtk-layer-shell": true,
 
-    "modules-left": ["custom/launcher", "custom/divider", "cpu", "custom/divider", "memory", "custom/divider", "network", "custom/divider", "custom/gpu-usage", "battery"],
-    "modules-center": ["clock"],
-    "modules-right": ["custom/updates", "custom/divider", "backlight", "custom/divider", "pulseaudio", "custom/divider", "tray", "custom/divider", "custom/clipboard"],
+    "modules-left": ["custom/launcher", "cpu", "memory", "custom/gpu-usage"],
+    "modules-center": ["clock", "custom/updates"],
+    "modules-right": ["network", "battery", "backlight", "pulseaudio", "tray", "custom/clipboard"],
 
     "clock": {
         "tootltip": false,
-        "format": " {:%a, %e %b, %I:%M %p}"
+        "format": "{:%a, %e %b, %I:%M %p}"
     },
 
     "custom/gpu-usage": {
@@ -24,7 +24,7 @@
 
     "custom/launcher": {
         "tootltip": false,
-        "format" : " 󰣇",
+        "format" : "󰣇 ",
 
     },
 
@@ -50,7 +50,7 @@
         "format-disconnected": "Disconnected", //An empty format will hide the module.
         "tooltip-format": "{ifname} via {gwaddr}",
         "tooltip-format-wifi": " {essid} {signalStrength}%",
-        "tooltip-format-ethernet": " {ifname}",
+        "tooltip-format-ethernet": "  {ifname}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
         "exec": "kitty -e nmcli dev wifi",
@@ -58,9 +58,9 @@
     },
 
     "custom/updates":{
-        "format": " {} Update(s)",
+        "format": "{} ",
         "exec": "checkupdates | wc -l",
-        //"exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
+        "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
         "interval": 200,
         "on-click": "kitty -e sudo pacman -Syyu"
     },
@@ -74,9 +74,8 @@
         "device": "intel_backlight",
         "format": "{icon} {percent}%",
         "format-icons": ["󰃞", "󰃟", "󰃠"],
-        "on-scroll-up": "brightnessctl set 1%+",
-        "on-scroll-down": "brightnessctl set 1%-",
-        "min-length": 6
+        "on-scroll-up": "brightnessctl set +5%",
+        "on-scroll-down": "brightnessctl set 5%-",
     },
 
     "pulseaudio": {
@@ -104,7 +103,7 @@
             "warning": 30,
             "critical": 20
         },
-        "format": "{icon}  {capacity}% ",
+        "format": "{icon} {capacity}% ",
         "format-charging": " {capacity}% ",
         "format-plugged": " {capacity}% ",
         "format-alt": "{time} {icon} ",
@@ -124,9 +123,6 @@
 
     },
 
-    "custom/divider": {
-        "format": ""
-    },
     "custom/notification": {
         "tooltip": false,
         "format": "{icon}",
