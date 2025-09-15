@@ -9,7 +9,7 @@
 
     "modules-left": ["custom/launcher", "cpu", "memory", "custom/gpu-usage"],
     "modules-center": ["clock", "custom/updates"],
-    "modules-right": ["network", "battery", "backlight", "pulseaudio", "tray", "custom/clipboard"],
+    "modules-right": ["network", "battery", "backlight", "pulseaudio", "custom/clipboard"],
 
     "clock": {
         "tootltip": false,
@@ -19,13 +19,12 @@
     "custom/gpu-usage": {
 	"exec": "$HOME/.scripts/waybar/gpuMonitor.sh",
 	"format": " {}",
-	"interval": 5,
+	"interval": 5
     },
 
     "custom/launcher": {
         "tootltip": false,
-        "format" : "󰣇 ",
-
+        "format" : "󰣇 "
     },
 
     "cpu": {
@@ -43,14 +42,13 @@
 
     "network": {
         "interval": 100,
-        //"interface": "wlp2s0",
         "format": "{ifname}",
-        "format-wifi": "  {signalStrength}%",
-        "format-ethernet": " {ipaddr}/{cidr}",
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": "{ipaddr}/{cidr}",
         "format-disconnected": "Disconnected", //An empty format will hide the module.
         "tooltip-format": "{ifname} via {gwaddr}",
         "tooltip-format-wifi": " {essid} {signalStrength}%",
-        "tooltip-format-ethernet": "  {ifname}",
+        "tooltip-format-ethernet": " {ifname}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
         "exec": "kitty -e nmcli dev wifi",
@@ -75,12 +73,12 @@
         "format": "{icon} {percent}%",
         "format-icons": ["󰃞", "󰃟", "󰃠"],
         "on-scroll-up": "brightnessctl set +5%",
-        "on-scroll-down": "brightnessctl set 5%-",
+        "on-scroll-down": "brightnessctl set 5%-"
     },
 
     "pulseaudio": {
         "format": "{icon} {volume}%",
-        "tooltip": false,
+        "tooltip": true,
         "format-muted": " Muted",
         "on-click": "pamixer -t",
         "on-scroll-up": "pamixer -i 5",
@@ -110,11 +108,6 @@
         "format-icons": ["", "", "", "", ""]
     },
 
-    "tray":{
-        "icon-size":18,
-        "spacing": 10
-    },
-
     "custom/temp": {
         "exec": "$HOME/.config/waybar/temp.py",
         "format": "{}",
@@ -142,6 +135,5 @@
         "on-click": "swaync-client -t -sw",
         "on-click-right": "swaync-client -d -sw",
         "escape": true
-    },
-   
+    }
 }
