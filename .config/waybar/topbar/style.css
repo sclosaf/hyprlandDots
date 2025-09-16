@@ -107,6 +107,14 @@ window#waybar.empty #window {
     border-radius: 24px;
 }
 
+#clock:hover
+{ 
+    background: #9CCFFF; /* lo sfondo esterno resta uguale */
+    color: #434c5e;
+    box-shadow: inset 0 0 0 3px #434c5e;
+    padding: 0px 10px;
+}
+
 #cpu
 {
     color: #FAFDFF;

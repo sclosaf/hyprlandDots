@@ -11,6 +11,7 @@ export packages=(
     "waybar"
     "yazi"
     "wofi"
+    "eww"
     
     "btop"
     "fastfetch"

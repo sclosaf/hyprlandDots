@@ -39,7 +39,8 @@
     "clock":
     {
         "tootltip": false,
-        "format": "{:%R %a}"
+        "format": "{:%R %a}",  
+	"on-click": "eww open --toggle cal-popup"
     },
 
     "cpu": 
