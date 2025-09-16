@@ -9,7 +9,7 @@
     
     "modules-left":
     [
-	"hyprland/workspaces"
+	"custom/toggle", "hyprland/workspaces"
     ],
     
     "modules-center": 
@@ -29,6 +29,12 @@
 	"pulseaudio", 
 	"clock"
     ],
+
+    "custom/toggle":
+    {
+        "tootltip": false,
+        "format" : " 󰣇"
+    },
 
     "clock":
     {
