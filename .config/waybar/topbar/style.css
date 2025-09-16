@@ -3,17 +3,18 @@
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
     font-size: 16px;
-    color: #FAFDFF;
     min-height: 16px;
 }
 
 window#waybar 
 {
     background: transparent;
+    color: #FAFDFF;
 }
 
 window#waybar.empty #window {
     background: rgba(12, 12, 12, 0.0);
+    color: #FAFDFF;
 }
 
 #tooltip 
@@ -32,10 +33,12 @@ window#waybar.empty #window {
     margin-top: 8px;
     margin-left: 10px;
     background-color: #434c5e;
+    color: #FAFDFF;
 }
 
 #workspaces button
 {
+    color: #FAFDFF;
     min-width: 10px;
     border-radius: 20px;
     margin: 6px 0px;
@@ -43,11 +46,13 @@ window#waybar.empty #window {
 
 #workspaces button:not(:last-child)
 {
+    color: #FAFDFF;
     margin: 0px;
 }
 
 #workspaces button:hover 
 {
+    color: #FAFDFF;
     background: inherit;
     box-shadow: inherit;
     text-shadow: inherit;
@@ -61,13 +66,28 @@ window#waybar.empty #window {
 #workspaces button.active:hover 
 {
     background: #9CCFFF;
-    color: #0d1117;
+    color: #434c5e;
     min-width: 22px;
     margin: 6px 4px;
 }
 
+#custom-toggle
+{
+    color: #FAFDFF;
+    background: #434c5e;
+    opacity: 1;
+    font-size: 18px;
+    padding: 0px 6px 0px 14px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 0px;
+    border-radius: 28px;
+}
+
 #window
 {
+    color: #FAFDFF;
     border-radius: 18px;
     padding: 0px 10px;
     margin-top: 8px;
@@ -76,6 +96,7 @@ window#waybar.empty #window {
 
 #clock
 {
+    color: #FAFDFF;
     background: #434c5e;
     opacity: 1;
     padding: 0px 10px;
@@ -88,6 +109,7 @@ window#waybar.empty #window {
 
 #cpu
 {
+    color: #FAFDFF;
     background: #434c5e;
     opacity: 1;
     padding: 0px 10px 0px 12px;
@@ -100,6 +122,7 @@ window#waybar.empty #window {
 
 #memory
 {
+    color: #FAFDFF;
     background: #434c5e;
     opacity: 1;
     padding: 0px 2px 0px 10px;
@@ -112,6 +135,7 @@ window#waybar.empty #window {
 
 #network
 {
+    color: #FAFDFF;
     background: #434c5e;
     font-size: 20px;
     opacity: 1;
@@ -125,6 +149,7 @@ window#waybar.empty #window {
 
 #bluetooth
 {
+    color: #FAFDFF;
     background: #434c5e;
     font-size: 20px;
     opacity: 1;
@@ -138,6 +163,7 @@ window#waybar.empty #window {
 
 #custom-updates
 {
+    color: #FAFDFF;
     background: #434c5e;
     opacity: 1;
     padding: 0px 14px 0px 10px;
@@ -150,6 +176,7 @@ window#waybar.empty #window {
 
 #backlight
 {
+    color: #FAFDFF;
     background: #434c5e;
     font-size: 20px;
     opacity: 1;
@@ -163,6 +190,7 @@ window#waybar.empty #window {
 
 #battery
 {
+    color: #FAFDFF;
     background: #434c5e;
     font-size: 20px;
     opacity: 1;
@@ -176,6 +204,7 @@ window#waybar.empty #window {
 
 #pulseaudio
 {
+    color: #FAFDFF;
     background: #434c5e;
     font-size: 20px;
     opacity: 1;

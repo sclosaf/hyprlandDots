@@ -33,7 +33,7 @@
     "custom/toggle":
     {
         "tootltip": false,
-        "format" : " 󰣇"
+        "format" : "󰣇 "
     },
 
     "clock":
