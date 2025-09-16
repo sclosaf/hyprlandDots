@@ -7,6 +7,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 ## TO DO
 
 - Scripts for workspaces, showoff and others
+- Look for cli tools
 - LazyGit
 
 ### Hyprland
