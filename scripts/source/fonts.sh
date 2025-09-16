@@ -2,4 +2,5 @@
 
 declare -A fontList=(
     ["JetBrains Mono Nerd"]="ttf-jetbrains-mono-nerd"
+    ["Awesome"]"ttf-font-awesome-5"
 )

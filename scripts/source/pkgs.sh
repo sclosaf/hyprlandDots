@@ -4,18 +4,30 @@ export packages=(
     "hyprland"
     "hyprlock"
     "hypridle"
+    "hyprpaper"
     "hyprcursor"
+
     "neovim"
     "waybar"
     "yazi"
     "wofi"
+    
     "btop"
     "fastfetch"
+
     "kitty"
     "alacritty"
+    
     "fish"
     "bash"
     "zsh"
-    "ttf-jetbrains-mono-nerd"
+
     "brightnessctl"
+    "pamixer"
+    "pacman-contrib"
+    "wl-clipboard"
+    "cliphist"
+    "swaync"
+    "networkmanager" 
+    "iwd"
 )
