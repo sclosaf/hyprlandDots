@@ -1,156 +1,178 @@
 * {
-border: none;
-border-radius: 0;
-font-family: "JetBrainsMono Nerd Font";
-font-weight: bold;
-font-size: 16px;
-min-height: 33px;
-
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    font-weight: bold;
+    font-size: 16px;
+    color: #FAFDFF;
+    min-height: 16px;
 }
 
-window#waybar {
-    background: rgba(21, 18, 27, 0);
-    color: #cae5f5;
-
+window#waybar 
+{
+    background: transparent;
 }
 
-#tooltip {
-opacity: 0.9;
-background: #24323a;
-border-radius: 10px;
-border-width: 2px;
-border-style: solid;
-
+#tooltip 
+{
+    opacity: 0.9;
+    background: #24323a;
+    border-radius: 14px;
+    border-width: 2px;
+    border-style: solid;
 }
 
-#custom-gpu-usage {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 8px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 0px 10px 10px 0px;
+#workspaces
+{
+    border-radius: 24px;
+    margin: 0;
+    margin-top: 8px;
+    margin-left: 10px;
+    background-color: #434c5e;
 }
 
-#battery {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 8px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 0px 0px 0px 0px;
+#workspaces button
+{
+    min-width: 10px;
+    border-radius: 20px;
+    margin: 6px 0px;
 }
 
-#pulseaudio {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 10px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 0px 0px 0px 0px;
+#workspaces button:not(:last-child)
+{
+    margin: 0px;
 }
 
-#backlight {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 8px 0px 0px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 0px 0px 0px 0px;
+#workspaces button:hover 
+{
+    background: rgba(255, 255, 255, 0.08);
 }
 
-#custom-updates {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 12px 0px 8px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 8px;
-margin-right: 0px;
-border-radius: 10px 10px 10px 10px;
+#workspaces button.active,
+#workspaces button.active:hover 
+{
+    background: #9CCFFF;
+    color: #0d1117;
+    min-width: 24px;
+    margin: 6px 4px;
 }
 
-#network {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 8px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 10px 0px 0px 10px;
+#window
+{
+    border-radius: 18px;
+    padding: 0px 10px;
+    margin-top: 8px;
+    background: #434c5e;
 }
 
-#memory {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 8px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 0px 0px 0px 0px;
+#clock
+{
+    background: #434c5e;
+    opacity: 1;
+    padding: 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 24px;
 }
 
-#cpu {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 8px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 10px 0px 0px 10px;
+#cpu
+{
+    background: #434c5e;
+    opacity: 1;
+    padding: 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 24px 0px 0px 24px;
 }
 
-#custom-launcher {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 1px 0px 8px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 8px;
-margin-right: 8px;
-border-radius: 10px 10px 10px 10px;
+#memory
+{
+    background: #434c5e;
+    opacity: 1;
+    padding: 0px 2px 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
 }
 
-#clock{
-background: #24323a;
-opacity: 0.9;
-padding: 0px 10px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 0px;
-border-radius: 10px 10px 10px 10px;
+#network
+{
+    background: #434c5e;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px 8px 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
 }
 
-#custom-notification {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 10px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 10px;
-border-radius: 0px 10px 10px 0px;
+#bluetooth
+{
+    background: #434c5e;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px 8px 0px 16px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
 }
 
-#custom-clipboard {
-background: #24323a;
-opacity: 0.9;
-padding: 0px 10px;
-margin-top: 8px;
-margin-bottom: 0px;
-margin-left: 0px;
-margin-right: 8px;
-border-radius: 0px 10px 10px 0px;
+#custom-updates
+{
+    background: #434c5e;
+    opacity: 1;
+    padding: 0px 14px 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 10px;
+    border-radius: 24px;
+}
+
+#backlight
+{
+    background: #434c5e;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px 12px 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+}
+
+#battery
+{
+    background: #434c5e;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px 8px 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+}
+
+#pulseaudio
+{
+    background: #434c5e;
+    font-size: 20px;
+    opacity: 1;
+    padding: 0px 20px 0px 10px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px 24px 24px 0px;
 }

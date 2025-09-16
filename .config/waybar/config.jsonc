@@ -1,61 +1,97 @@
 {
     "layer": "top",
     "position": "top",
-    //"mode": "dock",
+    "mode": "dock",
     "exclusive": "true",
     "passthrough": "false",
     "height": "20",
     "gtk-layer-shell": true,
+    
+    "modules-left":
+    [
+	"hyprland/workspaces"
+    ],
+    
+    "modules-center": 
+    [
+	"hyprland/window"
+    ],
+    
+    "modules-right": 
+    [
+	"custom/updates", 
+	"cpu", 
+	"memory", 
+	"network", 
+	"bluetooth", 
+	"battery", 
+	"backlight", 
+	"pulseaudio", 
+	"clock"
+    ],
 
-    "modules-left": ["custom/launcher", "cpu", "memory", "custom/gpu-usage"],
-    "modules-center": ["clock", "custom/updates"],
-    "modules-right": ["network", "battery", "backlight", "pulseaudio", "custom/clipboard"],
-
-    "clock": {
+    "clock":
+    {
         "tootltip": false,
-        "format": "{:%a, %e %b, %I:%M %p}"
+        "format": "{:%R %a}"
     },
 
-    "custom/gpu-usage": {
-	"exec": "$HOME/.scripts/waybar/gpuMonitor.sh",
-	"format": " {}",
-	"interval": 5
-    },
-
-    "custom/launcher": {
-        "tootltip": false,
-        "format" : "󰣇 "
-    },
-
-    "cpu": {
+    "cpu": 
+    {
         "interval": 30,
         "format" : " {}%",
         "max-length": 10,
 	"on-click":"kitty -e btop"
     },
 
-    "memory": {
+    "memory":
+    {
         "interval": 1,
-        "format": " {}%",
+        "format": " {}% |",
         "max-length": 30
     },
 
-    "network": {
-        "interval": 100,
-        "format": "{ifname}",
-        "format-wifi": " {signalStrength}%",
-        "format-ethernet": "{ipaddr}/{cidr}",
-        "format-disconnected": "Disconnected", //An empty format will hide the module.
-        "tooltip-format": "{ifname} via {gwaddr}",
-        "tooltip-format-wifi": " {essid} {signalStrength}%",
-        "tooltip-format-ethernet": " {ifname}",
-        "tooltip-format-disconnected": "Disconnected",
-        "max-length": 50,
-        "exec": "kitty -e nmcli dev wifi",
-	"on-click": "iwmenu -l rofi&"
+    "network":
+    {
+	"format-icons":
+	[
+		"󰤟",
+		"󰤢",
+		"󰤥",
+		"󰤨"
+	],
+	
+	"format-wifi": "{icon}",
+	"format-ethernet": "",
+	"format-linked": "󰄡",
+	"format-disconnected": "",
+	"tooltip-format": "{essid} ({signalStrength}%) - {gwaddr}",
+	"tooltip-format-ethernet": "{ifname} - {gwaddr}",
+	"tooltip-format-disconnected": "Disconnected"
     },
 
-    "custom/updates":{
+    "bluetooth":
+    {
+	"format": "󰂯",
+	"format-disabled": "󰂲",
+	"format-connected": "󰂱 {num_connections}",
+	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
+	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
+	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
+	"on-click": "bluetooth toggle"
+    },
+
+    "hyprland/window":
+    {
+        "format": "{initialTitle}"
+    },
+
+    "hyprland/workspaces":
+    {
+    },
+
+    "custom/updates":
+    {
         "format": "{} ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
@@ -63,77 +99,71 @@
         "on-click": "kitty -e sudo pacman -Syyu"
     },
 
-    "custom/clipboard":{
-        "format": "",
-        "on-click": "kitty --class clipse -e 'clipse'"
-    },
-
-    "backlight": {
-        "device": "intel_backlight",
-        "format": "{icon} {percent}%",
-        "format-icons": ["󰃞", "󰃟", "󰃠"],
-        "on-scroll-up": "brightnessctl set +5%",
-        "on-scroll-down": "brightnessctl set 5%-"
-    },
-
-    "pulseaudio": {
-        "format": "{icon} {volume}%",
-        "tooltip": true,
-        "format-muted": " Muted",
-        "on-click": "pamixer -t",
-        "on-scroll-up": "pamixer -i 5",
-        "on-scroll-down": "pamixer -d 5",
-        "scroll-step": 5,
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        }
+    "backlight":
+    {
+	"device": "intel_backlight",
+	"format": "{icon}",
+	"format-icons":
+	[
+		"󰛩",
+		"󱩎",
+		"󱩏",
+		"󱩐",
+		"󱩑",
+		"󱩒",
+		"󱩓",
+		"󱩔",
+		"󱩕",
+		"󱩖",
+		"󰛨"
+	],
+	"on-scroll-up": "brightnessctl set 10%+",
+	"on-scroll-down": "brightnessctl set 10%-"
     },
 
     "battery": {
-        "states": {
-            "good": 95,
-            "warning": 30,
-            "critical": 20
-        },
-        "format": "{icon} {capacity}% ",
-        "format-charging": " {capacity}% ",
-        "format-plugged": " {capacity}% ",
-        "format-alt": "{time} {icon} ",
-        "format-icons": ["", "", "", "", ""]
+	"full-at": 95,
+	"states": {
+		"warning": 35,
+		"critical": 10
+	},
+	"format": "{icon}",
+	"format-plugged": "",
+	"format-charging": "󰂄",
+	"format-icons":
+	[
+		"󰂎",
+		"󰁺",
+		"󰁻",
+		"󰁼",
+		"󰁽",
+		"󰁾",
+		"󰁿",
+		"󰂀",
+		"󰂁",
+		"󰂂",
+		"󰁹"
+	]
     },
 
-    "custom/temp": {
-        "exec": "$HOME/.config/waybar/temp.py",
-        "format": "{}",
-        "tooltip": true,
-        "interval": 20
-
-    },
-
-    "custom/notification": {
-        "tooltip": false,
-        "format": "{icon}",
-        "format-icons": {
-            "notification": "<span foreground='red'><sup></sup></span>",
-            "none": "",
-            "dnd-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-none": "",
-            "inhibited-notification": "<span foreground='red'><sup></sup></span>",
-            "inhibited-none": "",
-            "dnd-inhibited-notification": "<span foreground='red'><sup></sup></span>",
-            "dnd-inhibited-none": ""
-        },
-        "return-type": "json",
-        "exec-if": "which swaync-client",
-        "exec": "swaync-client -swb",
-        "on-click": "swaync-client -t -sw",
-        "on-click-right": "swaync-client -d -sw",
-        "escape": true
+    "pulseaudio":
+    {
+	"format": "{icon}",
+	"format-muted": "",
+	"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
+	"on-click-right": "pavucontrol",
+	"on-scroll-up": "wpctl set-volume -l 1.3 @DEFAULT_SINK@ 5%+",
+	"on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 5%-",
+	"scroll-step": 5,
+	"format-icons": {
+		"headphone": "",
+		"hands-free": "",
+		"headset": "",
+		"default": [
+			"",
+			"",
+			""
+		]
+	}
     }
 }

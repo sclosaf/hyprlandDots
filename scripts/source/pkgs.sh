@@ -25,8 +25,6 @@ export packages=(
     "brightnessctl"
     "pamixer"
     "pacman-contrib"
-    "wl-clipboard"
-    "cliphist"
     "swaync"
     "networkmanager" 
     "iwd"
