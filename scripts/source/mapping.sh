@@ -5,6 +5,8 @@ declare -A mapping=(
     [".config/bash"]="$HOME/.config/bash"
     [".config/fastfetch"]="$HOME/.config/fastfetch"
     [".config/fish"]="$HOME/.config/fish"
+    [".config/bash"]="$HOME/.config/bash"
+    [".config/zsh"]="$HOME/.config/zsh"
     [".config/hypr"]="$HOME/.config/hypr"
     [".config/kitty"]="$HOME/.config/kitty"
     [".config/nvim"]="$HOME/.config/nvim"
@@ -12,7 +14,6 @@ declare -A mapping=(
     [".config/wofi"]="$HOME/.config/wofi"
     [".config/yazi"]="$HOME/.config/yazi"
     [".config/zsh"]="$HOME/.config/zsh"
-    [".config/.vimrc"]="$HOME/.vimrc"
 
     [".wallpapers/"]="$HOME/.wallpapers"
     [".scripts/"]="$HOME/.scripts"

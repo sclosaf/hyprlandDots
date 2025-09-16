@@ -25,17 +25,18 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Waybar
 
-Script per ogni info
+- Script for each info
 - Add caffeine
 - Script for turning waybar
 - Bluetooth
 - Number of workspaces
+- Widget for cheatsheet
 
 ### NeoVim
 
 - Colors
 - Lazy package manager
-- Plugins and video spunto
+- Plugins and videos for ideas
 - Shortcuts and vim motions
 - Macro
 
