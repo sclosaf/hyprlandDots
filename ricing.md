@@ -30,9 +30,8 @@ NO BLURRING OR SHADERS OR SHADOWS
 - Script for each info
 - Add caffeine
 - Script for turning waybar
-- Bluetooth
-- Number of workspaces
 - Widget for cheatsheet
+- Script for other section
 
 ### NeoVim
 

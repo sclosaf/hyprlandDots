@@ -14,7 +14,6 @@ declare -A mapping=(
     [".config/wofi"]="$HOME/.config/wofi"
     [".config/yazi"]="$HOME/.config/yazi"
     [".config/zsh"]="$HOME/.config/zsh"
-    [".config/eww"]="$HOME/.config/eww"
 
     [".wallpapers/"]="$HOME/.wallpapers"
     [".scripts/"]="$HOME/.scripts"

@@ -11,7 +11,6 @@ export packages=(
     "waybar"
     "yazi"
     "wofi"
-    "eww"
     
     "btop"
     "fastfetch"
@@ -30,6 +29,17 @@ export packages=(
     "networkmanager" 
     "iwd"
     "iwmenu"
+    "bluez" 
+    "bluez-utils" 
+    "blueman"
+    "network-manager-applet"
+    "pipewire" 
+    "wireplumber" 
+    "pipewire-pulse" 
+    "pulsemixer" 
+    "pavucontrol"  
+    "upower"
+    "powertop"
 
     "nvidia"
     "nvidia-utils"
@@ -40,3 +50,5 @@ export packages=(
     "vulkan-intel"
     "lib32-vulkan-intel"
 )
+
+
