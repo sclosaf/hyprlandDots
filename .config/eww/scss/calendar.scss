@@ -1,0 +1,47 @@
+$dark-background: #141619;
+$light-background: #2e3336;
+$blue-background: rgb(23, 91, 112);
+$text-color: #efe3c7;
+
+* { 
+  all: unset; 
+  font-family: "JetBrains Mono Nerd Font"; 
+  color: $text-color; 
+  font-size: 20px; 
+}
+
+.calendar-box {
+  margin-top: 14px;
+  margin-right: 30px;
+  margin-left: 30px;
+  margin-bottom: -5px;
+  background-color: $light-background;
+  border-radius: 15px;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.calendar {
+  font-size: 20px;
+}
+
+calendar:selected {
+  background-color: $blue-background;
+  border-radius: 10px;
+}
+
+calendar.header {
+}
+
+calendar.button {
+  color: $light-background;
+}
+
+calendar.highlight {
+  font-size: 5px;
+}
+
+calendar:indeterminate {
+  color: #afa387;
+}
+

@@ -41,7 +41,7 @@
     {
         "tootltip": false,
         "format": "{:%R %a}",  
-	"on-click": "eww open --toggle cal-popup"
+	"on-click": "eww -c $HOME/.config/eww open --toggle calendar"
     },
 
     "group/metrics": 

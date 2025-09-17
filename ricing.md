@@ -9,6 +9,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 - Scripts for workspaces, showoff and others
 - Look for cli tools
 - LazyGit
+- Pywall
 
 ### Hyprland
 
