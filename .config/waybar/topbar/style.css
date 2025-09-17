@@ -15,7 +15,8 @@
 #battery,
 #pulseaudio,
 #custom-toggle,
-#ease-in-out{
+#costum-updates,
+#custom-other{
     transition: all 0.2s ease-in-out;
 }
 
@@ -279,6 +280,26 @@ window#waybar.empty #window {
     background: #434c5e;
     font-size: 20px;
     opacity: 1;
+    padding: 0px 16px 0px 8px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    border-radius: 0px;
+}
+
+#pulseaudio:hover
+{
+    background: #9CCFFF;
+    color: #434c5e;
+}
+
+#custom-other
+{
+    color: #FAFDFF;
+    background: #434c5e;
+    font-size: 20px;
+    opacity: 1;
     padding: 0px 20px 0px 8px;
     margin-top: 8px;
     margin-bottom: 0px;
@@ -287,7 +308,7 @@ window#waybar.empty #window {
     border-radius: 0px 24px 24px 0px;
 }
 
-#pulseaudio:hover
+#custom-other:hover
 {
     background: #9CCFFF;
     color: #434c5e;

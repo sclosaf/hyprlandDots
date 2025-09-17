@@ -26,6 +26,7 @@
 	"battery", 
 	"backlight", 
 	"pulseaudio", 
+	"custom/other",
 	"clock"
     ],
 
@@ -185,5 +186,12 @@
 			""
 		]
 	}
+    },
+
+    "custom/other":
+    {
+	"tooltip":false,
+	"format": ""
+	// "on-click": ""
     }
 }
