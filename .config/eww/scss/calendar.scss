@@ -1,7 +1,9 @@
-$dark-background: #141619;
-$light-background: #2e3336;
-$blue-background: rgb(23, 91, 112);
-$text-color: #efe3c7;
+$dark-background: #2E3440;
+$light-background: #3B4252;
+$blue-background: #5E81AC; 
+$text-color: #D8DEE9;      
+$muted-text: #81A1C1;      
+$highlight: #88C0D0;       
 
 * { 
   all: unset; 
@@ -11,37 +13,88 @@ $text-color: #efe3c7;
 }
 
 .calendar-box {
-  margin-top: 14px;
-  margin-right: 30px;
-  margin-left: 30px;
-  margin-bottom: -5px;
   background-color: $light-background;
   border-radius: 15px;
   padding: 10px;
-  font-size: 10px;
+  font-weight: bold;
+  margin: 0;
 }
 
 .calendar {
-  font-size: 20px;
+  background-color: $light-background;
+  padding: 10px;
+  border-radius: 15px;
+  margin: 0;
+}
+
+calendar {
+  color: $text-color;
+  padding: 5px;
 }
 
 calendar:selected {
-  background-color: $blue-background;
-  border-radius: 10px;
+  color: $blue-background;
+  font-weight: bold;
 }
 
 calendar.header {
+  background-color: $dark-background;
+  color: $text-color;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
 }
 
 calendar.button {
-  color: $light-background;
+    color: transparent;
+    background-color: transparent;
+    min-height: 0px;
+    min-width: 0px;
+    padding: 0px;
+    margin: 0px;
 }
 
 calendar.highlight {
-  font-size: 5px;
+  color: $highlight;
+  padding: 10px;
 }
 
 calendar:indeterminate {
-  color: #afa387;
+  color: $muted-text;
 }
 
+calendar.button:hover {
+  background-color: $blue-background;
+  color: $dark-background;
+}
+
+calendar.view.day {
+  background-color: $blue-background;
+  color: $dark-background;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+calendar.view.day:selected {
+  background-color: $highlight;
+  color: $dark-background;
+  font-weight: bold;
+}
+
+calendar.view {
+  background-color: $light-background;
+  color: $text-color;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+calendar.view:selected {
+  background-color: $blue-background;
+  color: $dark-background;
+  font-weight: bold;
+}

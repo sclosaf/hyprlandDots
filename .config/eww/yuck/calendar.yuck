@@ -1,16 +1,15 @@
 (defwindow calendar
   :timeout 200
   :monitor 0
-  :stacking "fg"
-  :windowtype "normal"
+  :stacking "overlay"
+  :windowtype "dock"
   :wm-ignore true
-  :geometry (geometry :x "2%" :y "1%" :width "19%" :height "70%")
+  :geometry (geometry :x "1855" :y "10" :width "300" :height "400" :anchor "top left")
   (calendar_widget)
 )
 
 (defwidget calendar_widget []
-  (box :class "calendar-box" :orientation "h"
+  (box :class "calendar-box" :orientation "v"
     (calendar :class "calendar")
   )
 )
-
