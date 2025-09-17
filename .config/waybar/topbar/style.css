@@ -15,8 +15,7 @@
 #battery,
 #pulseaudio,
 #custom-toggle,
-#custom-updates
-{
+#ease-in-out{
     transition: all 0.2s ease-in-out;
 }
 
@@ -62,7 +61,7 @@ window#waybar.empty #window {
     box-shadow: inherit;
     text-shadow: inherit;
     min-width: 10px;
-    transition: background-color 0.1s ease, color 0.1s ease, margin 0.1s ease, min-width 0.1s ease;
+    transition: inherit;
     margin: 6px 4px
 }
 
