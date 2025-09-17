@@ -20,8 +20,7 @@
     "modules-right": 
     [
 	"custom/updates", 
-	"cpu", 
-	"memory", 
+	"group/metrics",
 	"network", 
 	"bluetooth", 
 	"battery", 
@@ -34,6 +33,7 @@
     {
         "tootltip": false,
         "format" : "󰣇 "
+	//"on-click" : ""
     },
 
     "clock":
@@ -43,23 +43,34 @@
 	"on-click": "eww open --toggle cal-popup"
     },
 
+    "group/metrics": 
+    {
+	"tooltip": false,
+	"orientation": "horizontal",
+	"modules": ["cpu", "memory"]
+    },
+
     "cpu": 
     {
+	"tooltip": false,
         "interval": 30,
         "format" : " {}%",
         "max-length": 10,
 	"on-click":"kitty -e btop"
     },
 
+
     "memory":
     {
+	"tooltip": false,
         "interval": 1,
-        "format": " {}% |",
+        "format": " {}%",
         "max-length": 30
     },
 
     "network":
     {
+	"tooltip": false,
 	"format-icons":
 	[
 		"󰤟",
@@ -71,34 +82,32 @@
 	"format-wifi": "{icon}",
 	"format-ethernet": "",
 	"format-linked": "󰄡",
-	"format-disconnected": "",
-	"tooltip-format": "{essid} ({signalStrength}%) - {gwaddr}",
-	"tooltip-format-ethernet": "{ifname} - {gwaddr}",
-	"tooltip-format-disconnected": "Disconnected"
+	"format-disconnected": ""
     },
 
     "bluetooth":
     {
+	"tooltip": false,
 	"format": "󰂯",
 	"format-disabled": "󰂲",
 	"format-connected": "󰂱 {num_connections}",
-	"tooltip-format": "{controller_alias}\t{controller_address}\n\n{num_connections} connected",
-	"tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{num_connections} connected\n\n{device_enumerate}",
-	"tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
 	"on-click": "bluetooth toggle"
     },
 
     "hyprland/window":
     {
+	"tooltip": false,
         "format": "{initialTitle}"
     },
 
     "hyprland/workspaces":
     {
+	"tooltip": false
     },
 
     "custom/updates":
     {
+	"tooltip": false,
         "format": "{} ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
@@ -108,6 +117,7 @@
 
     "backlight":
     {
+	"tooltip": false,
 	"device": "intel_backlight",
 	"format": "{icon}",
 	"format-icons":
@@ -128,7 +138,9 @@
 	"on-scroll-down": "brightnessctl set 10%-"
     },
 
-    "battery": {
+    "battery":
+    {
+	"tooltip": false,
 	"full-at": 95,
 	"states": {
 		"warning": 35,
@@ -155,6 +167,7 @@
 
     "pulseaudio":
     {
+	"tooltip": false,
 	"format": "{icon}",
 	"format-muted": "",
 	"on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
