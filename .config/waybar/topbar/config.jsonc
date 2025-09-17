@@ -32,8 +32,8 @@
     "custom/toggle":
     {
         "tootltip": false,
-        "format" : "󰣇 "
-	//"on-click" : ""
+        "format" : "󰣇 ",
+	"on-click" : "~/.scripts/waybar/toggleConfig.sh"
     },
 
     "clock":
