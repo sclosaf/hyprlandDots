@@ -32,6 +32,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 - Script for turning waybar
 - Widget for cheatsheet
 - Script for other section
+- Add eww widgets
 
 ### NeoVim
 
