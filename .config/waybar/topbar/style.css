@@ -3,7 +3,7 @@
     font-family: "JetBrainsMono Nerd Font";
     font-weight: bold;
     font-size: 16px;
-    min-height: 16px;
+    min-height: 8px;
 }
 
 #workspaces button,
@@ -43,15 +43,35 @@ window#waybar.empty #window {
 #workspaces button
 {
     color: #FAFDFF;
-    min-width: 10px;
+    min-width: 8px;
     border-radius: 20px;
     margin: 6px 0px;
 }
 
-#workspaces button:not(:last-child)
+#workspaces button:first-child 
 {
-    color: #FAFDFF;
-    margin: 0px;
+    margin-left: 4px;
+}
+
+#workspaces button:last-child
+{
+    margin-right: 4px;
+}
+
+#workspaces button:first-child:hover,
+#workspaces button:last-child:hover
+{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+#workspaces button.active:first-child,
+#workspaces button.active:last-child,
+#workspaces button.active:hover:first-child,
+#workspaces button.active:hover:last-child
+{
+    margin-left: 4px;
+    margin-right: 4px;
 }
 
 #workspaces button:hover 
@@ -60,8 +80,8 @@ window#waybar.empty #window {
     background: #EBF5FF;
     box-shadow: inherit;
     text-shadow: inherit;
-    min-width: 10px;
     transition: inherit;
+    min-width: 8px;
     margin: 6px 4px
 }
 
@@ -70,7 +90,7 @@ window#waybar.empty #window {
 {
     background: #9CCFFF;
     color: #434c5e;
-    min-width: 22px;
+    min-width: 20px;
     margin: 6px 4px;
 }
 
