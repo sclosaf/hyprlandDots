@@ -17,11 +17,10 @@ switchConfig()
     
     pkill -x waybar
     
-    # Start waybar with the opposite config
     if [[ "$currentConfig" == "topbar" ]]; then
         waybar -c "$SIDEBAR_CONFIG" -s "$SIDEBAR_STYLE" &
     else
-        waybar -c "$TOPBAR_CONFIG" -s "$TOPBARSTYLE" &
+        waybar -c "$TOPBAR_CONFIG" -s "$TOPBAR_STYLE" &
     fi
 }
 

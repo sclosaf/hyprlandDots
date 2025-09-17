@@ -1,27 +1,32 @@
 * {
-    font-family: "JetBrains Mono Nerd Font";
-    /*font-family: "JetBrainsMono Nerd Font";*/
+    border: none;
+    font-family: "JetBrainsMono Nerd Font";
+    color: #FAFDFF;
     font-weight: bold; 
-    font-size: 15px;
+    font-size: 16px;
+    min-width: 16px;
 }
 
 #custom-notification {
   font-family: "JetBrains Mono Nerd Font";
   font-size: 18px;
- color: #cccedb;
  margin-left: -2px;
  margin-top: -4px ;
  padding-bottom: 12px;
 }
 
 window#waybar {
-    background: rgba(21, 21, 21, 0.83); 
-/*background: transparent;*/
-  /*  border-radius: 15px; */
- /*  border: 2px solid #124323; */
-/* border: 0px solid #A1BDCE; */
- border: 3px solid rgba(255, 255, 255, 0.3);
- border-radius: 6px;
+    background: #16171a; 
+ border: 2px solid rgba(255, 255, 255, 0.3);
+ border-radius: 32px;
+}
+
+#custom-toggle
+{
+    color: #FAFDFF;
+    background: #434c5e;
+    opacity: 1;
+    font-size: 18px;
 }
 
 
@@ -37,7 +42,6 @@ tooltip {
 #workspaces{
 font-weight: normal;
 background: rgba(23, 23, 23, 0.0);
-    color: #2F302D;
     box-shadow: none;
 	text-shadow: none;
     border-radius: 9px;
@@ -51,7 +55,6 @@ background: rgba(23, 23, 23, 0.0);
 #workspaces button {
 font-weight: normal;
 background: rgba(23, 23, 23, 0.0);
-    color: #B1B2BD;
     box-shadow: none;
 	text-shadow: none;
     border-radius: 9px;
@@ -69,7 +72,6 @@ background: rgba(23, 23, 23, 0.0);
 
  
   /* background-image: url("/home/anik/Documents/bar1.png");*/
-    color: #cccedb;   
     font-weight: normal;
     transition: all 0.3s ease;
       padding-left: 0px;
@@ -79,7 +81,6 @@ background: rgba(23, 23, 23, 0.0);
 
 #workspaces button:hover {
     background: none;
-    color: #7DAEA3;
     font-weight: normal;
     animation: ws_hover 20s ease-in-out 1;
     transition: all 0.5s cubic-bezier(.55,-0.68,.48,1.682);
@@ -95,13 +96,11 @@ background: rgba(23, 23, 23, 0.0);
     margin-bottom: 3px;
     margin-left: 3px;
     margin-right: 3px;
-    color: @wb-color;
     animation: tb_normal 20s ease-in-out 1;
 }
 
 #taskbar button.active {
     background: #C8C8C8;
-    color: #C8C8C8;
     margin-left: 10px;
     margin-right: 10px;
     padding-left: 0px;
@@ -131,22 +130,11 @@ margin-top: 3px;
     min-height: 16px;
     font-weight: bold;
     font-size: 13px;
-    color: #FBF1C7;
 }
 
 #tray menu separator {
     min-height: 10px;
 }
-
-
-#custom-spacer{
-opacity: 0.0;
-padding-top: 3px;
-}
-#custom-smallspacer{
-opacity: 0.0;
-}
-
 
 #custom-mouse{
 font-size: 14px;
@@ -157,7 +145,6 @@ background:  #161320;
 
 #custom-power{
     font-size: 15px;
-    color: #FFFFFF;
     background:  rgba(22, 19, 32, 0.9);
     margin: 6px 0px 6px 0px;
     padding-left: 4px;
@@ -165,7 +152,6 @@ background:  #161320;
     }
 
 #backlight{
-    color: #cccedb;
     background: rgba(23, 23, 23, 0.0);
     font-weight: normal;
     font-size: 19px;
@@ -174,7 +160,6 @@ background:  #161320;
 }
 #bluetooth,
 #custom-cliphist{
-    color: #E6E7E7;
     background:  #161320;
     opacity: 1;
     margin: 4px 0px 4px 0px;
@@ -185,7 +170,6 @@ background:  #161320;
 #battery{
     font-weight: normal;
     font-size: 22px;
-    color: #a6d189;
     background:  rgba(23, 23, 23, 0.0);
     opacity: 1;
     margin: 0px 0px 0px 0px;
@@ -195,7 +179,6 @@ background:  #161320;
 }
 
 #idle_inhibitor{
-color: #24966e;
 background: @bar-bg;
     opacity: 1;
     margin: 4px 0px 4px 0px;
@@ -204,7 +187,6 @@ background: @bar-bg;
 
 }
 #clock{
-    color: #cccedb;
     font-size: 15px;
     font-weight: 900;
     font-family: "CaskaydiaCove Nerd Font Mono";
@@ -222,7 +204,6 @@ background: @bar-bg;
 #pulseaudio{
 font-weight: normal;
 font-size: 18px;
-color: #cccedb;
     background:  rgba(22, 19, 32, 0.0);
     opacity: 1;
     margin-left: -0px;
@@ -230,7 +211,6 @@ color: #cccedb;
 #cpu{
 font-weight: normal;
 font-size: 22px;
-color: #cccedb;
 }
 #custom-led{
 font-size: 16px;
@@ -247,10 +227,8 @@ border-radius: 7px;
 #memory{
 font-weight: normal;
 font-size: 22px;
-color: #cccedb;
 }
 #mpris{
-color: #cccedb;
 animation: repeat;
 	animation-name: blink;
 	animation-duration: 3s;
@@ -261,12 +239,10 @@ animation: repeat;
 
 @keyframes blink {
     to {
-        color: #262827;
         
     }
 }
 #network{
-color: #cccedb;
 font-weight: normal;
 font-size: 19px;
 margin-left: -2px;
@@ -275,7 +251,6 @@ margin-left: -2px;
 #custom-spotify,
 #custom-theme,
 #custom-menu{
-color: #cccedb;
 background:  rgba(23, 23, 23, 0.0);
 margin: 0px 0px 0px 0px;
     padding-left: 1px;
@@ -290,7 +265,6 @@ padding: 0px;
 #custom-wbar,
 #window{
 font-family: "CaskaydiaCove Nerd Font Mono";
-color: #7DAEA3;
 padding-left: 5px;
 }
 #custom-l_end,
@@ -302,7 +276,6 @@ padding-left: 5px;
 #custom-box,
 #upower#headset,
 #upower{
-color: #cccedb;
 /*margin: 8px 3px 3px 8px;*/
 margin: 8px;
 padding-top: 0px;
@@ -321,7 +294,6 @@ border-radius: 7px;
 }
 #custom-rr_end {
 font-weight: normal;
-    color: #E8EDF0;
     background:  rgba(23, 23, 23, 0.0);
     opacity: 1;
     margin: 0px 0px 0px 0px;
@@ -356,13 +328,11 @@ font-weight: normal;
 }
 
 #battery.charging, #battery.plugged {
-	color: #E8EDF0;
 	
 }
 
 
 #battery.critical:not(.charging) {
-    color: red;
 }
 
 
@@ -411,7 +381,6 @@ font-weight: normal;
 
 #custom-expand {
     min-width: 25px;
-    color: #A1BDCE;
     font-size: 16px;
 }
 
