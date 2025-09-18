@@ -27,12 +27,9 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Waybar
 
-- Script for each info
 - Add caffeine
-- Script for turning waybar
 - Widget for cheatsheet
-- Script for other section
-- Add eww widgets
+- Script for other section copy complete widget with eww
 
 ### NeoVim
 
