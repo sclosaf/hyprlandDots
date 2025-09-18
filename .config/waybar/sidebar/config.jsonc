@@ -2,18 +2,18 @@
     "layer": "top",
     "position": "left",
     "mod": "dock",
-    "margin-left": 4,
+    "margin-left": 8,
     "margin-right": 0,
-    "margin-top": 4,
-    "margin-bottom": 4,
+    "margin-top": 8,
+    "margin-bottom": 8,
     "exclusive": true,
     "passthrough": false,
     "gtk-layer-shell": true,
     "reload_style_on_change": true,
 
     "modules-left": ["custom/toggle", "hyprland/workspaces"],
-    "modules-center": ["mpris"],
-    "modules-right": ["group/expand","network","group/expand-3","group/expand-2","clock","upower","custom/notification"],
+    "modules-center": [],
+    "modules-right": ["network","clock","upower","custom/notification"],
 
     "custom/toggle":
     {
@@ -58,96 +58,6 @@
      "modules": ["upower","upower/headset"]
    },
 
-"custom/smallspacer":{
-"format": " ",
-"rotate": 0
-},
-"memory": {
-    "interval": 1,
-    "rotate": 270,
-    "format": "{icon}",
-    "format-icons": ["󰝦","󰪞","󰪟","󰪠","󰪡","󰪢","󰪣","󰪤","󰪥"],
-    "max-length": 10
-},
-"cpu": {
-    "interval": 1,
-    "format": "{icon}",
-    "rotate": 270,
-    "format-icons": ["󰝦","󰪞","󰪟","󰪠","󰪡","󰪢","󰪣","󰪤","󰪥"]
-},
-
-
-"mpris": {
-	"format": "󰝚 {player_icon}",
-//"format": "<span color='#1E90D7'> </span> {player_icon} <b>{dynamic}</b>",
-	"rotate": 90,
-	"format-paused": "<span color='#2d2d2e'>󰝚 {status_icon}</span>",
-//"format-paused": "<span color='#254B61'> </span> <span color='#2d2d2e'>{status_icon} <b>{dynamic}</b></span>",
-	"max-length": 6,
-	"player-icons": {
-		"default": "󰏤",
-		"mpv": "󰝚"
-	},
-	"status-icons": {
-		"paused": "󰐊" 
-	},
-	// "ignored-players": ["firefox"]
-},
-"tray": {
-        "icon-size": 16,
-        "rotate": 0,
-        "spacing": 3
-    },
-
-   "group/expand": {
-     "orientation": "vertical",
-     "drawer": {
-         "transition-duration": 600,
-         "children-class": "not-power",
-       "transition-to-left": true,
-       //  "click-to-reveal": true
-     },
-     "modules": ["custom/menu","custom/spacer","tray"]
-   },
-
- "custom/menu":{
- "format": "󰅃",
- "rotate": 0,
- },
- 
-
-"custom/notification": {
-    "tooltip": false,
-    "rotate": 0,
-    "format": "{icon}",
-    "format-icons": {
-      "notification": "󱅫",
-      "none": "󰂚",
-      "dnd-notification": "󱅫",
-      "dnd-none": "󰂚",
-      "inhibited-notification": "󱅫",
-      "inhibited-none": "󰂚",
-      "dnd-inhibited-notification": "󱅫",
-      "dnd-inhibited-none": "󰂚"
-    },
-    "return-type": "json",
-    "exec-if": "which swaync-client",
-    "exec": "swaync-client -swb",
-    "on-click-right": "swaync-client -d -sw",
-    "on-click": "swaync-client -t -sw",
-    "escape": true
-  },
-  
-  "hyprland/window": {  
-//"format": "{}"   // <--- these is the default value  
-"format": "<span  weight='bold' >{class}</span>",
-"on-click-right": "pkill waybar & hyprctl dispatch exec waybar",
-"rotate": 90,
- "max-length": 120,
- "icon": false,
- "icon-size": 13,
-},
-
     "custom/power": {
         "format": "@{}",
         "rotate": 0,
@@ -155,15 +65,6 @@
         "on-click-right": "pkill ags",
         "tooltip": true
     },
-    
-    "custom/spacer":{
-    "format": "|",
-    "rotate": 90,
-    },
-    
-
-
-    
     
 "hyprland/workspaces": {
 	"format": "{icon}",
@@ -174,131 +75,6 @@
 	//"active": "⦿"
 	},
 },
-
-"wlr/workspaces": {
-    "persistent-workspaces": {
-        "3": [], // Always show a workspace with name '3', on all outputs if it does not exists
-        "4": ["eDP-1"], // Always show a workspace with name '4', on output 'eDP-1' if it does not exists
-        "5": ["eDP-1", "DP-2"] // Always show a workspace with name '5', on outputs 'eDP-1' and 'DP-2' if it does not exists
-    }
-},
-
-
-"cava": {
-       "cava_config": "~/.config/cava/config",
-      "framerate": 60,
-      "autosens": 1,
-      "bars": 14,
-      "lower_cutoff_freq": 50,
-      "higher_cutoff_freq": 10000,
-      "method": "pulse",
-      "source": "auto",
-      "stereo": true,
-      "reverse": false,
-      "bar_delimiter": 0,
-      "monstercat": false,
-      "waves": false,
-      "noise_reduction": 0.77,
-      "input_delay": 2,
-      "format-icons" : ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█" ],
-      "actions": {
-                 "on-click-right": "mode"
-                 }
-    },
-    
-    "custom/script": {
-    "on-click": "~/.config/waybar/volume.sh toggle",
-    "format": "",
-    
-    },
-
-    "custom/cliphist": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰅇 clipboard history",
-        "on-click": "sleep 0.1 && cliphist.sh c",
-        "on-click-right": "sleep 0.1 && cliphist.sh d",
-        "on-click-middle": "sleep 0.1 && cliphist.sh w",
-        "interval" : 86400, // once every day
-        "tooltip": true
-    },
-
-    "custom/wbar": {
-        "format": "𐌏{}", //    //
-        "rotate": 0,
-        "exec": "echo ; echo show app menu",
-        "on-click": "wofi --show drun",
-        "on-click-right": "wbarconfgen.sh p",
-        "on-click-middle": "sleep 0.1 && quickapps.sh kitty firefox spotify code dolphin",
-        "interval" : 86400,
-        "tooltip": true
-    },
-
-    "custom/theme": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰟡 pick color",
-        "on-click": "hyprpicker",
-        "on-click-right": "themeswitch.sh -p",
-        "on-click-middle": "sleep 0.1 && themeselect.sh",
-        "interval" : 86400, // once every day
-        "tooltip": true
-    },
-
-    "custom/wallchange": {
-        "format": "{}",
-        "rotate": 0,
-        "exec": "echo ; echo 󰆊 switch wallpaper",
-       "on-click": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/skyway.jpg",
-        "on-click-right": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/cloud.png",
-        "on-click-middle": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/gradient.jpg",
-        "on-scroll-up": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/torvalds.png",
-        "on-scroll-down": "swww img --transition-type grow --transition-pos 0.071,0.988 --transition-step 255 --transition-fps 60 /home/anik/Downloads/night.png",
-        "interval" : 86400,
-        "tooltip": true
-    },
-    "custom/mouse":
-    { 
-            "format": "",
-            "format-alt": "",
-            
-            "on-click": "m8mouse -dpi 1 -led 2 -speed 4",
-        "on-click-right": "m8mouse -dpi 1 -led 4 -speed 4",
-        "on-click-middle": "m8mouse -dpi 1 -led 7 -speed 4",
-        "tooltip": true 
-    },
-
-	"wlr/taskbar": {
-		"format": "{icon}",
-		"rotate": 90,
-		"icon-size": 18,
-		"icon-theme": "Tela-circle-dracula",
-        "spacing": 0,
-		"tooltip-format": "{title}",
-		"on-click": "activate",
-		"on-click-middle": "close",
-		"ignore-list": [
-			"Alacritty"
-		],
-		"app_ids-mapping": {
-			"firefoxdeveloperedition": "firefox-developer-edition"
-		}
-	},
-
-    "custom/spotify": {
-        "exec": "mediaplayer.py --player spotify",
-        "format": " {}",
-        "rotate": 0,
-        "return-type": "json",
-        "on-click": "playerctl play-pause --player spotify",
-        "on-click-right": "playerctl next --player spotify",
-        "on-click-middle": "playerctl previous --player spotify",
-        "on-scroll-up": "volumecontrol.sh -p spotify i",
-        "on-scroll-down": "volumecontrol.sh -p spotify d",
-        "max-length": 25,
-        "escape": true,
-        "tooltip": true
-    },
 
     "idle_inhibitor": {
         "format": "{icon}",

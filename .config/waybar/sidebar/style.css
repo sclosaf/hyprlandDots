@@ -4,21 +4,15 @@
     color: #FAFDFF;
     font-weight: bold; 
     font-size: 16px;
-    min-width: 16px;
+    min-width: 12px;
 }
 
-#custom-notification {
-  font-family: "JetBrains Mono Nerd Font";
-  font-size: 18px;
- margin-left: -2px;
- margin-top: -4px ;
- padding-bottom: 12px;
-}
 
-window#waybar {
-    background: #16171a; 
- border: 2px solid rgba(255, 255, 255, 0.3);
- border-radius: 32px;
+
+window#waybar
+{
+	background: #16171a; 
+	border-radius: 32px;
 }
 
 #custom-toggle
@@ -26,29 +20,33 @@ window#waybar {
     color: #FAFDFF;
     background: #434c5e;
     opacity: 1;
-    font-size: 18px;
+    padding: 10px 4px 10px 12px;
+    border-radius: 30px;
 }
 
 
-tooltip {
-        background: #1D2021;
+tooltip
+{
+
+	background: #1D2021;
         color: #FBF1C7;
         font-size: 13px;
         border-radius: 7px;
-       border: 2px solid #101a24;
+        border: 2px solid #101a24;
 
 
     }
-#workspaces{
-font-weight: normal;
-background: rgba(23, 23, 23, 0.0);
-    box-shadow: none;
+#workspaces
+{
+	font-weight: normal;
+	background: rgba(23, 23, 23, 0.0);
+	box-shadow: none;
 	text-shadow: none;
-    border-radius: 9px;
-    transition: 0.2s ease;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 1px;
+    	border-radius: 9px;
+	transition: 0.2s ease;
+	padding-left: 4px;
+	padding-right: 4px;
+	padding-top: 1px;
 }
 
 
@@ -375,17 +373,3 @@ font-weight: normal;
     margin-left: 1px;
     padding-left: 3px;
 }
-
-
-/* Style for launchers */
-
-#custom-expand {
-    min-width: 25px;
-    font-size: 16px;
-}
-
-#group-minimized {
-    border-left: solid;
-    border-left-width: 0.5;
-}
-
