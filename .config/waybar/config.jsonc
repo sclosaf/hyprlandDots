@@ -6,52 +6,52 @@
     "passthrough": "false",
     "height": "20",
     "gtk-layer-shell": true,
-    
+
     "modules-left":
     [
 	"custom/toggle", "hyprland/workspaces"
     ],
-    
-    "modules-center": 
+
+    "modules-center":
     [
 	"hyprland/window"
     ],
-    
-    "modules-right": 
+
+    "modules-right":
     [
-	"custom/updates", 
+	"custom/updates",
 	"group/metrics",
-	"network", 
-	"bluetooth", 
-	"battery", 
-	"backlight", 
-	"pulseaudio", 
+	"network",
+	"bluetooth",
+	"battery",
+	"backlight",
+	"pulseaudio",
 	"custom/other",
 	"clock"
     ],
 
     "custom/toggle":
     {
-        "tootltip": false,
+        "tooltip": false,
         "format" : "󰣇 ",
-	"on-click" : "~/.scripts/waybar/toggleConfig.sh"
+	"on-click" : "~/.scripts/waybar/toggleBar.sh"
     },
 
     "clock":
     {
         "tootltip": false,
-        "format": "{:%R %a}"  
+        "format": "{:%R %a}"
 	//"on-click": ""
     },
 
-    "group/metrics": 
+    "group/metrics":
     {
 	"tooltip": false,
 	"orientation": "horizontal",
 	"modules": ["cpu", "memory"]
     },
 
-    "cpu": 
+    "cpu":
     {
 	"tooltip": false,
         "interval": 30,
@@ -79,7 +79,7 @@
 		"󰤥",
 		"󰤨"
 	],
-	
+
 	"format-wifi": "{icon}",
 	"format-ethernet": "",
 	"format-linked": "󰄡",
@@ -194,8 +194,9 @@
 
     "custom/other":
     {
-	"tooltip":false,
-	"format": ""
-	// "on-click": ""
+        "tooltip": false,
+        "exec": "pgrep hypridle >/dev/null && echo '󰾫' || echo '󰛊'",
+        "interval": 1,
+        "on-click": "sh -c 'pidof hypridle >/dev/null && killall hypridle || hypridle &'"
     }
 }
