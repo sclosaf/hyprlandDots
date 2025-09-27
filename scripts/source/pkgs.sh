@@ -20,10 +20,11 @@ export packages=(
     "bash"
     "zsh"
 
+    "git"
+    "github-cli"
     "brightnessctl"
     "pamixer"
     "pacman-contrib"
-    "swaync"
     "networkmanager"
     "iwd"
     "iwmenu"
@@ -40,5 +41,3 @@ export packages=(
     "powertop"
     "luarocks"
 )
-
-

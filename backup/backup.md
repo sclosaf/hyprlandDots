@@ -3,6 +3,7 @@ gmail
 stem
 uniweb
 deepseek
+chatgpt
 github
 KTH
 DTU
