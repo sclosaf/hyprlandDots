@@ -39,12 +39,6 @@ export packages=(
     "upower"
     "powertop"
     "luarocks"
-
-    "nvidia"
-    "nvidia-utils"
-    "nvidia-settings"
-    "mesa"
-    "vulkan-intel"
 )
 
 
