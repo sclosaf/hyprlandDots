@@ -1,0 +1,15 @@
+gmail
+gmail
+stem
+uniweb
+deepseek
+github
+KTH
+DTU
+Chalmers
+https://www.nerdfonts.com/cheat-sheet
+https://ieltsregistration.britishcouncil.org/
+https://streamingcommunityz.cz/en/watch/201?e=5080
+https://www.italiapersonalfinance.it/blog/wiki/
+https://www.italiapersonalfinance.it/blog/guida-primo-investimento/
+https://www.italiapersonalfinance.it/blog/conto-titoli-broker/

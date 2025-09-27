@@ -42,11 +42,9 @@ export packages=(
 
     "nvidia"
     "nvidia-utils"
-    "lib32-nvidia-utils"
     "nvidia-settings"
     "mesa"
     "vulkan-intel"
-    "lib32-vulkan-intel"
 )
 
 
