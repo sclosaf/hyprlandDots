@@ -5,7 +5,6 @@ export packages=(
     "hyprlock"
     "hypridle"
     "hyprpaper"
-    "hyprcursor"
 
     "neovim"
     "waybar"
@@ -16,7 +15,6 @@ export packages=(
     "fastfetch"
 
     "kitty"
-    "alacritty"
 
     "fish"
     "bash"
@@ -47,7 +45,6 @@ export packages=(
     "lib32-nvidia-utils"
     "nvidia-settings"
     "mesa"
-    "lib32-mesa"
     "vulkan-intel"
     "lib32-vulkan-intel"
 )

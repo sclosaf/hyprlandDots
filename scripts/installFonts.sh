@@ -13,9 +13,9 @@ for fontName in "${!fontList[@]}"; do
     echo "Installing: $fontName (package: $packageName)"
 
     if yay -S --noconfirm "$packageName"; then
-	echo "Successfully installed: $fontName"
+        echo "Successfully installed: $fontName"
     else
-	echo "Failed to install: $fontName"
+        echo "Failed to install: $fontName"
     fi
 done
 
