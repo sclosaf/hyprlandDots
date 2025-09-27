@@ -16,6 +16,8 @@ export packages=(
 
     "kitty"
 
+    "firefox"
+
     "fish"
     "bash"
     "zsh"
