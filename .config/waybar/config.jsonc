@@ -39,9 +39,8 @@
 
     "clock":
     {
-        "tootltip": false,
+        "tooltip": false,
         "format": "{:%R %a}"
-	//"on-click": ""
     },
 
     "group/metrics":
