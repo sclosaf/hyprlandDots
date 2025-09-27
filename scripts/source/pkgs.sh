@@ -24,11 +24,14 @@ export packages=(
 
     "git"
     "github-cli"
+    "p7zip"
+
     "brightnessctl"
     "pamixer"
     "pacman-contrib"
     "networkmanager"
     "iwd"
+    "wl-clipboard"
     "iwmenu"
     "bluez"
     "bluez-utils"
