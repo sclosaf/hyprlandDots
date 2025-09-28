@@ -4,6 +4,16 @@ source ./source/pkgs.sh
 
 main()
 {
+    echo "Installing yay ...."
+
+    cd /tmp
+
+    git clone https://aur.archlinux.org/yay.git
+    cd yay
+    makepkg -si --noconfirm
+
+    cd -
+
     echo "Updating packages database ..."
 
     if ![ command -v pacman &>/dev/null ]; then
@@ -13,7 +23,7 @@ main()
 
     sudo pacman -Sy --noconfirm || {
         echo "Error updating package database. Aborting ..."
-        exit 1
+            exit 1
     }
 
     for pkg in "${packages[@]}"; do
@@ -23,7 +33,8 @@ main()
 
         sudo pacman -S --noconfirm --needed "$pkg" || {
             echo "Error installing $pkg."
-        }
+    }
+
     done
 
     echo "Package installation completed successfully."

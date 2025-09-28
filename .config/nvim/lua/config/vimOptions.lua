@@ -65,13 +65,6 @@ vim.api.nvim_create_autocmd("BufWritePre", {
     command = [[%s/\s\+$//e]],
 })
 
-vim.api.nvim_create_autocmd("BufWritePre", {
-    pattern = "*",
-    callback = function()
-        vim.cmd("normal! gg=G")
-    end,
-})
-
 vim.opt.foldmethod = "indent"
 vim.opt.foldlevelstart = 99
 
