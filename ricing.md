@@ -13,7 +13,6 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Hyprland
 
-- See windows and layer rules for several programs (folder rules)
 - Possible key useful bindings
 - Check back autostart.conf
 - Check back Qt and environment.conf
@@ -27,17 +26,15 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Waybar
 
-- Add caffeine
 - Widget for cheatsheet
 - Script for other section copy complete widget with eww
 
 ### NeoVim
 
-- Colors
-- Lazy package manager
+- Integrate with Whichkye
+- Add pywall plugins
 - Plugins and videos for ideas
 - Shortcuts and vim motions
-- Macro
 
 ### Swaync
 
