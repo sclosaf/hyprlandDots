@@ -3,10 +3,10 @@ return {
     branch = "master",
     build = ":TSUpdate",
     lazy = false,
-    config = function()
-        require("nvim-treesitter.configs").setup {
-            highlight = { enable = true },
-            indent = { enable = true },
-        }
-    end,
+    opts = {
+        ensure_installed = {"cpp", "json", "java", "lua", "bash", "markdown", "markdown_inline", "rust" },
+        highlight = {enable = true},
+        indent = {enable = true},
+        auto_install = true
+    }
 }
