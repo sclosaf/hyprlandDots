@@ -1,11 +1,20 @@
 return {
-  {
-    "nvim-zh/better-escape.vim",
-    event = "InsertEnter",
+    "max397574/better-escape.nvim",
     config = function()
-      vim.g.better_escape_shortcut = 'kj'
-      vim.g.better_escape_interval = 200
+        require("better_escape").setup {
+            mappings = {
+                i = {
+                    k = { j = "<Esc>" },
+                    j = { k = "<Esc>" },
+                },
+                v = {
+                    k = { j = "<Esc>" },
+                    j = { k = "<Esc>" },
+                },
+            },
+            timeout = 200,
+            clear_empty_lines = true,
+            keys = "<Esc>",
+        }
     end
-  },
 }
-

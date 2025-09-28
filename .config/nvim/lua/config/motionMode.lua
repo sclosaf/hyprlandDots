@@ -1,7 +1,19 @@
 local motionMode = true
 
 local modes = {'i','n','v'}
-local keys = {"<Up>", "<Down>", "<Left>", "<Right>", "<Home>", "<End>", "<PageUp>", "<PageDown>"}
+local keys = {
+    "<Up>", "<Down>", "<Left>", "<Right>",
+    "<Home>", "<End>", "<PageUp>", "<PageDown>",
+
+    "<S-Up>", "<S-Down>", "<S-Left>", "<S-Right>",
+    "<S-Home>", "<S-End>", "<S-PageUp>", "<S-PageDown>",
+
+    "<C-Up>", "<C-Down>", "<C-Left>", "<C-Right>",
+    "<C-Home>", "<C-End>", "<C-PageUp>", "<C-PageDown>",
+
+    "<C-S-Up>", "<C-S-Down>", "<C-S-Left>", "<C-S-Right>",
+    "<C-S-Home>", "<C-S-End>", "<C-S-PageUp>", "<C-S-PageDown>"
+}
 
 local function enableMotionMode()
     motionMode = true
@@ -38,4 +50,3 @@ if motionMode then
 else
     disableMotionMode()
 end
-
