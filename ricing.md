@@ -40,6 +40,8 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Kitty
 
+- Movable cursor
+
 ### Zsh, bash, fish
 
 ### Yazi
