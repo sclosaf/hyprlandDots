@@ -31,9 +31,14 @@ return {
             group_empty_dirs = true,
             window = {
                 mappings = {
-                    ["<bs>"] = "navigate_up",
-                    ["."] = "set_root",
+                    ["h"] = "navigate_up",
+                    ["l"] = "set_root",
                 },
+            },
+            filtered_items = {
+                visible = true,
+                hide_dotfiles = false,
+                hide_gitignored = false,
             },
         },
         buffers = {
