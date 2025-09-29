@@ -54,46 +54,6 @@ return {
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠚⠓⠓⠒⠛⠛⠉⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
                 ]],
             },
-            keys = {
-                {
-                    key = "n",
-                    label = "   New file",
-                    action = ":ene <BAR> startinsert <CR>"
-                },
-                {
-                    key = "f",
-                    label = "󰮗   Find file",
-                    action = ":Telescope find_files<CR>"
-                },
-                {
-                    key = "e",
-                    label = "󱏒   File Explorer",
-                    action = ":Neotree<CR>"
-                },
-                {
-                    key = "r",
-                    label = "󱋢   Recent",
-                    action = ":Telescope oldfiles<CR>"
-                },
-                {
-                    key = "c",
-                    label = "󱁼   Configuration",
-                    action = ":cd ~/.config/nvim/ | Neotree<CR>"
-                },
-                {
-                    key = "l",
-                    label = "󰒲   Lazy",
-                    action = ":Lazy<CR>"
-                },
-                {
-                    key = "q",
-                    label = "󰿅   Quit",
-                    action = ":qa<CR>"
-                },
-            },
-            startup = {
-                max_items = 10,
-            },
             formats = {
                 header = {
                     align = "center",
@@ -109,22 +69,26 @@ return {
                 },
                 {
                     pane = 2,
-                    {
-                        { section = "keys", gap = 1, padding = 2 },
-                    },
+                    type = "padding",
+                    size = "50%",  -- Padding dinamico che si adatta all'altezza
                 },
                 {
                     pane = 2,
-                    icon = " ",
-                    title = "Recent Files",
-                    { section = "recent_files", gap = 1, padding = 2, limit = 10 },
+                    { icon = "󰘵 ", title = "Options", padding = 1, indent = 0},
+                    { section = "keys", gap = 1 },
+                    indent = 2,
+                    padding = 2,
+                },
+                {
+                    pane = 2,
+                    { icon = " ", title = "Recent Files",  padding = 1, indent = 0 },
+                    { section = "recent_files", limit = 10, gap = 1},
                     indent = 2,
                 },
                 {
                     pane = 2,
-                    {
-                        { section = "startup" },
-                    },
+                    type = "padding",
+                    size = "50%",  -- Padding dinamico che si adatta all'altezza
                 },
             },
         },
