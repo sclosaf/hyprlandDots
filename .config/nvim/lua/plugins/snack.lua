@@ -62,35 +62,123 @@ return {
                     return { { "[", hl = "special" }, { item.key, hl = "key" }, { "]  ", hl = "special" } }
                 end,
             },
-            sections = {
-                {
-                    section = "header",
-                    padding = 4,
-                },
-                {
-                    pane = 2,
-                    type = "padding",
-                    size = "50%",  -- Padding dinamico che si adatta all'altezza
-                },
-                {
-                    pane = 2,
-                    { icon = "󰘵 ", title = "Options", padding = 1, indent = 0},
-                    { section = "keys", gap = 1 },
-                    indent = 2,
-                    padding = 2,
-                },
-                {
-                    pane = 2,
-                    { icon = " ", title = "Recent Files",  padding = 1, indent = 0 },
-                    { section = "recent_files", limit = 10, gap = 1},
-                    indent = 2,
-                },
-                {
-                    pane = 2,
-                    type = "padding",
-                    size = "50%",  -- Padding dinamico che si adatta all'altezza
-                },
-            },
+            sections = function()
+                local width = vim.o.columns
+                local height = vim.o.lines
+
+                if width < 140 and height < 50 then
+                    return {
+                        {
+                            section = "keys",
+                            gap = 1,
+                            padding = 2,
+                            formats = { align = "center" }
+                        },
+                        {
+                            type = "padding",
+                            size = 2,
+                        },
+                        {
+                            section = "recent_files",
+                            limit = 5,
+                            gap = 1,
+                            formats = { align = "center" }
+                        },
+                    }
+
+                elseif width > height * 1.5 then
+                    return {
+                        {
+                            {
+                                {
+                                    section = "header",
+                                    padding = 4,
+                                },
+                            },
+                            {
+
+                                pane = 2,
+                                {
+                                    type = "padding",
+                                    size = "25%",
+                                },
+                                {
+                                    icon = "󰘵 ",
+                                    title = "Options",
+                                    padding = 1,
+                                    indent = 0
+                                },
+                                {
+                                    section = "keys",
+                                    gap = 1
+                                },
+                                {
+                                    type = "padding",
+                                    size = 2,
+                                },
+                                {
+                                    icon = " ",
+                                    title = "Recent Files",
+                                    padding = 1,
+                                    indent = 0
+                                },
+                                {
+                                    section = "recent_files",
+                                    limit = 10,
+                                    gap = 1
+                                },
+                                {
+                                    type = "padding",
+                                    size = "25%",
+                                },
+                                indent = 2,
+                                padding = 2,
+                            },
+                        },
+                    }
+
+                else
+                    return {
+                        {
+                            section = "header",
+                            padding = 2,
+                        },
+                        {
+                            type = "padding",
+                            size = 2,
+                        },
+                        {
+                            icon = "󰘵 ",
+                            title = "Options",
+                            padding = 1,
+                            indent = 0,
+                            formats = { align = "center" }
+                        },
+                        {
+                            section = "keys",
+                            gap = 1,
+                            formats = { align = "center" }
+                        },
+                        {
+                            type = "padding",
+                            size = 1,
+                        },
+                        {
+                            icon = " ",
+                            title = "Recent Files",
+                            padding = 1,
+                            indent = 0,
+                            formats = { align = "center" }
+                        },
+                        {
+                            section = "recent_files",
+                            limit = 8,
+                            gap = 1,
+                            formats = { align = "center" }
+                        },
+                    }
+                end
+            end,
         },
         explorer = { enabled = false },
         indent = { enabled = false },
