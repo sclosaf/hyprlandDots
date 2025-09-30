@@ -8,6 +8,9 @@ km("n", "<C-j>", "<C-w>j")
 km("n", "<C-k>", "<C-w>k")
 km("n", "<C-l>", "<C-w>l")
 
+km("n", "[e", vim.diagnostic.goto_next)
+km("n", "]e", vim.diagnostic.goto_next)
+
 km("n", "[s", "]s")
 km("n", "]s", "[s")
 
