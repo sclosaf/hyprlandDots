@@ -113,7 +113,7 @@
         "format": "{} ",
         "exec": "checkupdates | wc -l",
         "exec-if": "[[ $(checkupdates | wc -l) != 0 ]]",
-        "interval": 200,
+        "interval": 300,
         "on-click": "kitty -e sudo pacman -Syyu"
     },
 
