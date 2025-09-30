@@ -28,13 +28,18 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 - Widget for cheatsheet
 - Script for other section copy complete widget with eww
+- Shutdown widget / system
 
 ### NeoVim
 
-- Integrate with Whichkye
+- Integrate with Whichkye and add descriptions to all
 - Add pywall plugins
 - Plugins and videos for ideas
 - Shortcuts and vim motions
+- Borders on LazyVim
+- Look for useful shortcuts
+- Enhanced research with / and ?
+- Entire system with Vim motions ?
 
 ### Swaync
 
@@ -57,3 +62,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 ### Metrics diagnostic
 
 ### Man pager NeoVim
+
+### Wofi
+
+- Enhanced research

@@ -1,8 +1,30 @@
-vim.keymap.set( 'n', '<C-h>', ':wincmd h<CR>')
-vim.keymap.set( 'n', '<C-j>', ':wincmd j<CR>')
-vim.keymap.set( 'n', '<C-k>', ':wincmd k<CR>')
-vim.keymap.set( 'n', '<C-l>', ':wincmd l<CR>')
-vim.keymap.set( 'n', '<C-d>', '<c-d>zz')
-vim.keymap.set( 'n', '<C-u>', '<c-u>zz')
-vim.keymap.set( 'n', 'n', 'nzzzv')
-vim.keymap.set( 'n', 'N', 'Nzzzv')
+-- remaps
+local km = vim.keymap.set
+
+vim.g.mapleader = " "
+
+km("n", "<C-h>", "<C-w>h")
+km("n", "<C-j>", "<C-w>j")
+km("n", "<C-k>", "<C-w>k")
+km("n", "<C-l>", "<C-w>l")
+
+km("n", "[s", "]s")
+km("n", "]s", "[s")
+
+km("n", "<leader>_", ":vertical resize +5<CR>")
+km("n", "<leader>*", ":vertical resize -5<CR>")
+km("n", "<leader>+", ":horizontal resize +5<CR>")
+km("n", "<leader>-", ":horizontal resize -5<CR>")
+
+km("v", "J", ":m '>+1<CR>gv=gv")
+km("v", "K", ":m '<-2<CR>gv=gv")
+
+km("n", "<C-n>", ":Telescope colorscheme<CR>")
+
+km("n", "<C-d>", "<C-d>zz")
+km("n", "<C-u>", "<C-u>zz")
+km("n", "<C-f>", "<C-f>zz")
+km("n", "<C-b>", "<C-b>zz")
+
+km("n", "n", "nzzzv")
+km("n", "N", "Nzzzv")

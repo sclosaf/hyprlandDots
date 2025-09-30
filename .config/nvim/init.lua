@@ -17,6 +17,7 @@ vim.opt.rtp:prepend(lazypath)
 require("config.vimOptions")
 require("config.motionMode")
 require("config.keymap")
+require("config.autocmd")
 require("lazy").setup({
     spec = {
         { import = "plugins" },
