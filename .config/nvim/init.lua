@@ -14,9 +14,9 @@ if not (vim.uv or vim.loop).fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+require("config.keymap")
 require("config.vimOptions")
 require("config.motionMode")
-require("config.keymap")
 require("config.autocmd")
 require("lazy").setup({
     spec = {
