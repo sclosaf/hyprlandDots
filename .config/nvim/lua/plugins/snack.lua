@@ -4,7 +4,6 @@ return {
     lazy = false,
     ---@type snacks.Config
     opts = {
-        bigfile = { enabled = false },
         dashboard = {
             enabled = true,
             preset = {
@@ -162,6 +161,7 @@ return {
                 end
             end,
         },
+        bigfile = { enabled = true },
         explorer = { enabled = false },
         indent = { enabled = false },
         input = { enabled = false },
