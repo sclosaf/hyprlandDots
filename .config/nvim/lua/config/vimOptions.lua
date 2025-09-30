@@ -5,7 +5,8 @@ vim.opt.laststatus = 2
 
 vim.opt.showmode = false
 vim.opt.showcmd = true
-vim.opt.cmdheight = 2
+vim.opt.shortmess:append("I")
+vim.opt.shortmess:append("c")
 
 vim.opt.wildmenu = true
 vim.opt.wildmode = { "list:longest", "full" }

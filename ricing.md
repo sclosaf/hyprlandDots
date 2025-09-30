@@ -32,6 +32,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### NeoVim
 
+- Add LSP Mason plugin
 - Integrate with Whichkye and add descriptions to all
 - Add pywall plugins
 - Plugins and videos for ideas

@@ -8,7 +8,7 @@ return {
             theme = "auto",
             component_separators = { left = " ", right = " " },
             section_separators = { left = "", right = "" },
-            disabled_filetypes = { statusline = { "neo-tree", "NvimTree", "dashboard" }, winbar = {} },
+            disabled_filetypes = { statusline = {}, winbar = {} },
             ignore_focus = {},
             always_divide_middle = true,
             always_show_tabline = true,
@@ -51,7 +51,7 @@ return {
         tabline = {},
         winbar = {},
         inactive_winbar = {},
-        extensions = { "nvim-tree" },
+        extensions = { },
     },
 }
 

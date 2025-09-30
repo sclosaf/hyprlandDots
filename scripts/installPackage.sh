@@ -37,6 +37,10 @@ main()
 
     done
 
+    echo "Installing oh my Zsh"
+
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
     echo "Package installation completed successfully."
 }
 

@@ -41,12 +41,12 @@ vim.api.nvim_create_autocmd("FileType", {
 
 vim.api.nvim_create_augroup("CreateDirs", { clear = true })
 vim.api.nvim_create_autocmd("BufWritePre", {
-  group = "CreateDirs",
-  pattern = "*",
-  callback = function()
-    local file_path = vim.fn.expand("<afile>:p:h")
-    if vim.fn.isdirectory(file_path) == 0 then
-      vim.fn.mkdir(file_path, "p")
-    end
-  end,
+    group = "CreateDirs",
+    pattern = "*",
+    callback = function()
+        local file_path = vim.fn.expand("<afile>:p:h")
+        if vim.fn.isdirectory(file_path) == 0 then
+            vim.fn.mkdir(file_path, "p")
+        end
+    end,
 })

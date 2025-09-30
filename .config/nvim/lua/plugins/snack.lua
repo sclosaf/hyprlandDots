@@ -51,8 +51,7 @@ return {
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢨⡇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡀⢀⡀⠀⡀⡀⡀⠀⠨⢉⠁⠀⠀⣠⣾⣛⣿⣻⣟⣻⣿⣿⡟⠉⣉⠉⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡌⠀⢀⣲⣶⣖⣶⣒⣒⣒⣐⣲⣤⣭⡭⣥⣭⢭⣭⣥⣿⣶⡿⣷⣶⣶⣶⣾⣟⣻⣟⡻⢗⣻⠿⠛⠛⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
 ⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠳⢴⣿⣿⣿⣿⣿⣿⣿⢏⣿⣿⣿⣿⡏⠉⠩⢿⣿⣿⣷⣿⣾⣿⣿⣛⠿⠿⠻⠟⣻⠟⠛⠓⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠚⠓⠓⠒⠛⠛⠉⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
-                ]],
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠉⠚⠓⠓⠒⠛⠛⠉⠀⠀⠀⠀⠀⠀⠈⠉⠉⠉⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀]],
             },
             formats = {
                 header = {
@@ -66,116 +65,99 @@ return {
                 local width = vim.o.columns
                 local height = vim.o.lines
 
-                if width < 140 and height < 50 then
+                if width < 160 and height < 50 then
                     return {
+                        {
+                            icon = "󰘵 ",
+                            title = "Options",
+                            padding = 1,
+                        },
                         {
                             section = "keys",
                             gap = 1,
                             padding = 2,
-                            formats = { align = "center" }
+                            formats = { align = "center" },
+                            indent = 1,
+                        },
+                        { section = "startup", },
+                        {
+                            pane = 2,
+                            icon = " ",
+                            title = "Recent Files",
+                            padding = 1,
                         },
                         {
-                            type = "padding",
-                            size = 2,
-                        },
-                        {
+                            pane = 2,
                             section = "recent_files",
-                            limit = 5,
+                            limit = 10,
                             gap = 1,
-                            formats = { align = "center" }
+                            indent = 1,
                         },
                     }
 
-                elseif width > height * 1.5 then
-                    return {
-                        {
-                            {
-                                {
-                                    section = "header",
-                                    padding = 4,
-                                },
-                            },
-                            {
-
-                                pane = 2,
-                                {
-                                    type = "padding",
-                                    size = "25%",
-                                },
-                                {
-                                    icon = "󰘵 ",
-                                    title = "Options",
-                                    padding = 1,
-                                    indent = 0
-                                },
-                                {
-                                    section = "keys",
-                                    gap = 1
-                                },
-                                {
-                                    type = "padding",
-                                    size = 2,
-                                },
-                                {
-                                    icon = " ",
-                                    title = "Recent Files",
-                                    padding = 1,
-                                    indent = 0
-                                },
-                                {
-                                    section = "recent_files",
-                                    limit = 10,
-                                    gap = 1
-                                },
-                                {
-                                    type = "padding",
-                                    size = "25%",
-                                },
-                                indent = 2,
-                                padding = 2,
-                            },
-                        },
-                    }
-
-                else
+                elseif width < 160 then
                     return {
                         {
                             section = "header",
                             padding = 2,
                         },
                         {
-                            type = "padding",
-                            size = 2,
-                        },
-                        {
                             icon = "󰘵 ",
                             title = "Options",
-                            padding = 1,
-                            indent = 0,
-                            formats = { align = "center" }
-                        },
-                        {
                             section = "keys",
                             gap = 1,
-                            formats = { align = "center" }
-                        },
-                        {
-                            type = "padding",
-                            size = 1,
-                        },
-                        {
-                            icon = " ",
-                            title = "Recent Files",
                             padding = 1,
-                            indent = 0,
-                            formats = { align = "center" }
+                        },
+                    }
+
+                else
+                    return {
+                        {
+                            {
+                                section = "header",
+                            },
                         },
                         {
-                            section = "recent_files",
-                            limit = 8,
-                            gap = 1,
-                            formats = { align = "center" }
-                        },
+                            pane = 2,
+                            {
+                                type = "padding",
+                                size = "25%",
+                            },
+                            {
+                                type = "padding",
+                                size = "25%",
+                            },
+                            {
+                                icon = "󰘵 ",
+                                title = "Options",
+                                padding = 1,
+                            },
+                            {
+                                section = "keys",
+                                indent = 2,
+                                gap = 1
+                            },
+                            {
+                                type = "padding",
+                                size = 1,
+                            },
+                            {
+                                icon = " ",
+                                title = "Recent Files",
+                                padding = 1,
+                            },
+                            {
+                                section = "recent_files",
+                                limit = 10,
+                                indent = 2,
+                                gap = 1
+                            },
+                            {
+                                type = "padding",
+                                size = "25%",
+                            },
+                            { section = "startup", },
+                        }
                     }
                 end
             end,
