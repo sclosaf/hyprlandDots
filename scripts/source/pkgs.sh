@@ -18,7 +18,6 @@ export packages=(
 
     "firefox"
 
-    "fish"
     "bash"
     "zsh"
 

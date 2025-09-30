@@ -4,7 +4,6 @@ declare -A mapping=(
     [".config/alacritty"]="$HOME/.config/alacritty"
     [".config/bash"]="$HOME/.config/bash"
     [".config/fastfetch"]="$HOME/.config/fastfetch"
-    [".config/fish"]="$HOME/.config/fish"
     [".config/bash"]="$HOME/.config/bash"
     [".config/zsh"]="$HOME/.config/zsh"
     [".config/hypr"]="$HOME/.config/hypr"
