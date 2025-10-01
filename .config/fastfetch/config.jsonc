@@ -122,7 +122,7 @@
             "type": "battery",
             "key": " ├ 󰁿  ",
             "keyColor": "35",
-            "format": "{12} h {13} m ({4})"
+            "format": "{12}h {13}m ({4})"
         },
         {
             "type": "uptime",
