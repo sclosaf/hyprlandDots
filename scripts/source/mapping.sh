@@ -12,7 +12,8 @@ declare -A mapping=(
     [".config/waybar"]="$HOME/.config/waybar"
     [".config/wofi"]="$HOME/.config/wofi"
     [".config/yazi"]="$HOME/.config/yazi"
-    [".zshrc"]="$HOME/.zshrc"
+    [".config/.zshrc"]="$HOME/.zshrc"
+    [".config/.p10k.zsh"]="$HOME/.p10k.zsh"
 
     [".wallpapers/"]="$HOME/.wallpapers"
     [".scripts/"]="$HOME/.scripts"
