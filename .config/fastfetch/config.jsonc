@@ -8,7 +8,9 @@
             "2": "cyan",
             "3": "magenta",
             "4": "white"
-        }
+        },
+        "width": 75,
+        "height": 30
     },
     "display": {
         "key": {
@@ -116,7 +118,7 @@
         {
             "type": "title",
             "format": "\u001b[35mUTILITY\u001b[0m",
-            "keyColor": "35"
+                "keyColor": "35"
         },
         {
             "type": "battery",
@@ -144,4 +146,4 @@
             "format": "{4}/{11}/{1} {14}:{18}:{20} {22}"
         }
             ]
-        }
+}
