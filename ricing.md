@@ -8,8 +8,6 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 - Scripts for workspaces, showoff and others
 - Look for cli tools
-- LazyGit
-- Pywall
 
 ### Hyprland
 
@@ -34,7 +32,6 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 - Add LSP Mason plugin
 - Integrate with Whichkye and add descriptions to all
-- Add pywall plugins
 - Plugins and videos for ideas
 - Shortcuts and vim motions
 - Borders on LazyVim

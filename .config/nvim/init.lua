@@ -23,4 +23,20 @@ require("lazy").setup({
         { import = "plugins" },
     },
     checker = { enabled = true },
+    ui = {
+        icons = {
+            cmd = " ",
+            config = " ",
+            event = " ",
+            ft = " ",
+            init = "󰮮 ",
+            import = " ",
+            keys = " ",
+            lazy = "󰒲 ",
+            loaded = "●",
+            not_loaded = "○",
+        },
+        show_change_log = true,
+        show_version = true,
+    },
 })
