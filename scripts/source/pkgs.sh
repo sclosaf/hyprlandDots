@@ -20,7 +20,6 @@ export packages=(
 
     "bash"
     "zsh"
-    "exa"
 
     "git"
     "github-cli"
