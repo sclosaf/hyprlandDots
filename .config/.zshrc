@@ -42,6 +42,6 @@ setopt appendhistory sharehistory hist_ignore_space hist_ignore_all_dups \
 
 alias ls='ls -la --color'
 
-alias ff='fastfetch'
+alias ff='clear && fastfetch'
 alias vim='nvim'
 alias c='clear'
