@@ -110,6 +110,12 @@
             "keyColor": "36"
         },
         {
+            "type": "battery",
+            "key": " ├ 󱊣  ",
+            "keyColor": "36",
+            "format": "{12}h {13}m ({4})"
+        },
+        {
             "type": "monitor",
             "key": " └   ",
             "keyColor": "36"
@@ -119,12 +125,6 @@
             "type": "title",
             "format": "\u001b[35mUTILITY\u001b[0m",
                 "keyColor": "35"
-        },
-        {
-            "type": "battery",
-            "key": " ├ 󰁿  ",
-            "keyColor": "35",
-            "format": "{12}h {13}m ({4})"
         },
         {
             "type": "uptime",
@@ -144,6 +144,12 @@
             "key": " └ 󰅐 ",
             "keyColor": "35",
             "format": "{4}/{11}/{1} {14}:{18}:{20} {22}"
+        },
+        "break",
+        {
+            "type": "colors",
+            "symbol": "square",
+            "blocks": 8
         }
             ]
 }
