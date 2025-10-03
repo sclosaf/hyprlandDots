@@ -134,10 +134,16 @@
         },
         {
             "type": "localip",
-            "key": " ├   ",
+            "key": " ├ 󰀑  ",
             "keyColor": "35",
             "format": "{1}",
             "interface": "wlan0"
+        },
+        {
+            "type": "publicip",
+            "key": " ├   ",
+            "keyColor": "35",
+            "format": "{1}: {2}"
         },
         {
             "type": "datetime",
