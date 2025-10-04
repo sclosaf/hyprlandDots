@@ -65,6 +65,8 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Wofi
 
+- Improve aestetic
+- Improve keybind search
 - Enhanced research
 
 ### Wlogout
