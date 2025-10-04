@@ -41,6 +41,8 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Swaync
 
+- TODO ?
+
 ### Kitty
 
 - Movable cursor
@@ -64,3 +66,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 ### Wofi
 
 - Enhanced research
+
+### Wlogout
+
+### Btop
