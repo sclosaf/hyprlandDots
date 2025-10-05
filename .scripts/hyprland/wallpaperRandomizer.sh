@@ -1,7 +1,7 @@
 #!/bin/bash
 
 DIR="$HOME/.wallpapers/hyprpaper"
-MAX=4
+MAX=5
 CONFIG="$HOME/.config/hypr/hyprpaper.conf"
 
 X=$(( (RANDOM % MAX) + 1 ))

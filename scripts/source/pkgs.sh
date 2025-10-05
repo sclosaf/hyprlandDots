@@ -9,7 +9,6 @@ export packages=(
     "neovim"
     "waybar"
     "yazi"
-    "wofi"
 
     "btop"
     "fastfetch"

@@ -63,11 +63,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Man pager NeoVim
 
-### Wofi
-
-- Improve aestetic
-- Improve keybind search
-- Enhanced research
+### Wofi (?)
 
 ### Wlogout
 

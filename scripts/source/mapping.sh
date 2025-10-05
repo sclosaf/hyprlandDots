@@ -10,7 +10,6 @@ declare -A mapping=(
     [".config/kitty"]="$HOME/.config/kitty"
     [".config/nvim"]="$HOME/.config/nvim"
     [".config/waybar"]="$HOME/.config/waybar"
-    [".config/wofi"]="$HOME/.config/wofi"
     [".config/yazi"]="$HOME/.config/yazi"
     [".config/zsh/.zshrc"]="$HOME/.zshrc"
     [".config/zsh/.p10k.zsh"]="$HOME/.p10k.zsh"
