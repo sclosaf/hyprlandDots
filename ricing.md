@@ -68,3 +68,5 @@ NO BLURRING OR SHADERS OR SHADOWS
 ### Wlogout
 
 ### Btop
+
+### zathura

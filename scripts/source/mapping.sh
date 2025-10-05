@@ -11,6 +11,7 @@ declare -A mapping=(
     [".config/nvim"]="$HOME/.config/nvim"
     [".config/waybar"]="$HOME/.config/waybar"
     [".config/yazi"]="$HOME/.config/yazi"
+    [".config/btop"]="$HOME/.config/btop"
     [".config/zsh/.zshrc"]="$HOME/.zshrc"
     [".config/zsh/.p10k.zsh"]="$HOME/.p10k.zsh"
 

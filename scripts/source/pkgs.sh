@@ -11,6 +11,7 @@ export packages=(
     "yazi"
 
     "btop"
+    "cava"
     "fastfetch"
 
     "kitty"
