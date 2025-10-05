@@ -70,3 +70,5 @@ NO BLURRING OR SHADERS OR SHADOWS
 ### Btop
 
 ### zathura
+
+### fzf
