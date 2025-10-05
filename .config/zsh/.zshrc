@@ -26,9 +26,12 @@ zinit ice depth=1; zinit light romkatv/powerlevel10k
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
+export FZF_DEFAULT_OPTS='--color=fg:#e5e9f0,hl:#81a1c1 --color=fg+:#e5e9f0,bg+:#3b4252,hl+:#81a1c1 --color=info:#5d6a82,prompt:#b48dac,pointer:#b48dac --color=marker:#5d6a82,spinner:#b48dac,header:#5d6a82'
+
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-autosuggestions
 zinit light Aloxaf/fzf-tab
+zstyle ':fzf-tab:*' use-fzf-default-opts yes
 
 autoload -Uz compinit && compinit
 zinit cdreplay -q

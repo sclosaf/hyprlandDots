@@ -24,6 +24,7 @@ export packages=(
     "git"
     "github-cli"
     "p7zip"
+    "fzf"
 
     "brightnessctl"
     "pamixer"
