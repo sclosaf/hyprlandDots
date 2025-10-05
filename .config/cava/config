@@ -1,0 +1,25 @@
+[general]
+framerate = 60
+autosens = 1
+overshoot = 40
+sensitivity = 130
+lower_cutoff_freq = 50
+upper_cutoff_freq = 10000
+
+[output]
+shader = shaders/bar_spectrum.frag
+bar_width = 1
+bar_spacing = 0
+orientation = top
+
+[color]
+background = '#2E3440'   # Nord0
+
+gradient = 1
+
+gradient_color_1 = '#4c566a'  # Nord10 (Dark Blue Accent)
+gradient_color_2 = '#5E81AC'  # Nord9 (Secondary Blue Accent)
+gradient_color_3 = '#d8dee9'  # Nord8 (Blue Accent)
+gradient_color_4 = '#eceff4'  # Nord7 (Cyan Accent)
+
+
