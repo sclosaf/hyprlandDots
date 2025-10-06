@@ -13,7 +13,17 @@ return {
             enabled = true,
             preset = {
                 keys = {
-                    { icon = " ", key = "f", desc = "Find File", action = ":Telescope find_files" },
+                    {
+                        icon = " ",
+                        key = "f",
+                        desc = "Find File",
+                        action = function()
+                            require("telescope.builtin").find_files({
+                                cwd = "/",
+                                prompt_title = "Search from Root"
+                            })
+                        end
+                    },
                     { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
                     { icon = " ", key = "g", desc = "Find Text", action = ":Telescope live_grep" },
                     { icon = " ", key = "e", desc = "File Manager", action = ":Neotree toggle" },
