@@ -43,6 +43,14 @@ HISTDUP=erase
 setopt appendhistory sharehistory hist_ignore_space hist_ignore_all_dups \
        hist_save_no_dups hist_ignore_dups hist_find_no_dups
 
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
+
 alias ls='ls -la --color'
 
 alias ff='clear && fastfetch'

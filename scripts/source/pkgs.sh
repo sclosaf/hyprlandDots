@@ -8,7 +8,6 @@ export packages=(
 
     "neovim"
     "waybar"
-    "yazi"
 
     "btop"
     "cava"

@@ -9,7 +9,6 @@ declare -A mapping=(
     [".config/kitty"]="$HOME/.config/kitty"
     [".config/nvim"]="$HOME/.config/nvim"
     [".config/waybar"]="$HOME/.config/waybar"
-    [".config/yazi"]="$HOME/.config/yazi"
     [".config/btop"]="$HOME/.config/btop"
     [".config/cava"]="$HOME/.config/cava"
     [".config/zsh/.zshrc"]="$HOME/.zshrc"
