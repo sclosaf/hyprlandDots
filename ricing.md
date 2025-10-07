@@ -47,13 +47,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 - Movable cursor
 
-### Zsh, bash, fish
-
-### Yazi
-
-### WayTrogen ?
-
-- Configure animations for wallpapers
+### Zsh, bash
 
 ### Zen Browser
 
@@ -62,8 +56,6 @@ NO BLURRING OR SHADERS OR SHADOWS
 ### Metrics diagnostic
 
 ### Man pager NeoVim
-
-### Wofi (?)
 
 ### Wlogout
 
