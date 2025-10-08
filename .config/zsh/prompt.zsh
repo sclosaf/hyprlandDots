@@ -18,5 +18,3 @@ PROMPT_CHAR="${PROMPT_CHAR_COLOR}$ >%f"
 
 autoload -Uz add-zsh-hook
 add-zsh-hook precmd build_prompts
-
-build_prompts

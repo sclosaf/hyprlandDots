@@ -5,3 +5,5 @@ source "$HOME/.config/zsh/themes.zsh"
 source "$HOME/.config/zsh/functions.zsh"
 source "$HOME/.config/zsh/plugins.zsh"
 source "$HOME/.config/zsh/prompt.zsh"
+
+build_prompts
