@@ -63,3 +63,5 @@ vim.opt.listchars = { tab = ">-", trail = "~", nbsp = "~" }
 vim.opt.errorbells = false
 vim.opt.visualbell = true
 vim.opt.belloff = "all"
+
+vim.opt.guicursor = ""

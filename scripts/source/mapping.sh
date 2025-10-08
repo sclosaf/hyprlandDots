@@ -1,7 +1,6 @@
 #!/bin/bash
 
 declare -A mapping=(
-    [".config/alacritty"]="$HOME/.config/alacritty"
     [".config/bash"]="$HOME/.config/bash"
     [".config/fastfetch"]="$HOME/.config/fastfetch"
     [".config/bash"]="$HOME/.config/bash"
