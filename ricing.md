@@ -38,6 +38,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 - Look for useful shortcuts
 - Enhanced research with / and ?
 - Entire system with Vim motions ?
+- neotree issue with ctrl+d ctrl+u ctrl+b ctrl+f
 
 ### Swaync
 
