@@ -10,8 +10,7 @@ declare -A mapping=(
     [".config/waybar"]="$HOME/.config/waybar"
     [".config/btop"]="$HOME/.config/btop"
     [".config/cava"]="$HOME/.config/cava"
-    [".config/zsh/.zshrc"]="$HOME/.zshrc"
-    [".config/zsh/.p10k.zsh"]="$HOME/.p10k.zsh"
+    [".config/zsh"]="$HOME/.config/zsh"
 
     [".wallpapers/"]="$HOME/.wallpapers"
     [".scripts/"]="$HOME/.scripts"
