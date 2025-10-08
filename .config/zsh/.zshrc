@@ -64,17 +64,29 @@ zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
 
 zstyle ':vcs_info:git:*' stagedstr "${VCS_MODIFIED_COLOR}+%f"
-zstyle ':vcs_info:git:*' unstagedstr "${VCS_MODIFIED_COLOR}!%f"
+zstyle ':vcs_info:git:*' unstagedstr "${VCS_MODIFIED_COLOR}%f"
 zstyle ':vcs_info:git:*' formats " ${VCS_CLEAN_COLOR}%b%f%c%u"
 zstyle ':vcs_info:git:*' actionformats " ${VCS_CLEAN_COLOR}%b%f${VCS_CONFLICTED_COLOR}|%a%f%c%u"
 
-function my_git_formatter()
+function git_formatter()
 {
     vcs_info
 
     if [[ -n "$vcs_info_msg_0_" ]]; then
         local git_info="$vcs_info_msg_0_"
         local additional_info=""
+
+        # Count staged files
+        local staged_count=$(git diff --staged --name-only 2>/dev/null | wc -l | tr -d ' ')
+        if [[ $staged_count -gt 0 ]]; then
+            additional_info+="${VCS_MODIFIED_COLOR}+${staged_count}%f"
+        fi
+
+        # Count unstaged files
+        local unstaged_count=$(git diff --name-only 2>/dev/null | wc -l | tr -d ' ')
+        if [[ $unstaged_count -gt 0 ]]; then
+            additional_info+="${VCS_MODIFIED_COLOR}!${unstaged_count}%f"
+        fi
 
         # Ahead/Behind information
         local ahead_behind=$(git rev-list --left-right --count HEAD...@'{u}' 2>/dev/null)
@@ -136,7 +148,7 @@ function prompt_dir()
 
 function prompt_vcs()
 {
-    local git_info=$(my_git_formatter)
+    local git_info=$(git_formatter)
     if [[ -n "$git_info" ]]; then
         echo -n "$git_info"
     fi
@@ -205,3 +217,4 @@ autoload -Uz add-zsh-hook
 add-zsh-hook precmd build_prompts
 
 build_prompts
+precmd() { echo }
