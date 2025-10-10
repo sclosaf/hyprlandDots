@@ -12,7 +12,6 @@ return {
         { "<leader>te", "<cmd>Neotree toggle<CR>", desc = "Toggle Neo-tree filesystem" },
         { "<leader>tE", "<cmd>cd ~/ | Neotree toggle<CR>", desc = "Toggle Neo-tree at home" },
         { "<leader>tr", "<cmd>cd / | Neotree toggle<CR>", desc = "Toggle Neo-tree at root" },
-        { "<leader>tg", "<cmd>Neotree toggle git_status<CR>", desc = "Toggle Neo-tree git status" },
     },
     opts = {
         close_if_last_window = true,

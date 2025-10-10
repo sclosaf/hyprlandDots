@@ -24,9 +24,9 @@ return {
                             })
                         end
                     },
+                    { icon = " ", key = "e", desc = "File Manager", action = ":Neotree toggle" },
                     { icon = " ", key = "n", desc = "New File", action = ":ene | startinsert" },
                     { icon = " ", key = "g", desc = "Find Text", action = ":Telescope live_grep" },
-                    { icon = " ", key = "e", desc = "File Manager", action = ":Neotree toggle" },
                     { icon = " ", key = "c", desc = "Config", action = ":cd ~/.config/nvim/ | Neotree" },
                     { icon = " ", key = "s", desc = "Restore Session", section = "session" },
                     { icon = "󰒲 ", key = "l", desc = "Lazy", action = ":Lazy", enabled = package.loaded.lazy ~= nil },
