@@ -9,10 +9,10 @@ return {
     lazy = false,
     cmd = "Neotree",
     keys = {
-        { "<leader>e", "<cmd>Neotree toggle<CR>", desc = "Toggle Neo-tree filesystem" },
-        { "<leader>E", "<cmd>cd ~/ | Neotree toggle<CR>", desc = "Toggle Neo-tree at home" },
-        { "<leader>f", "<cmd>cd / | Neotree toggle<CR>", desc = "Toggle Neo-tree at root" },
-        { "<leader>g", "<cmd>Neotree toggle git_status<CR>", desc = "Toggle Neo-tree git status" },
+        { "<leader>te", "<cmd>Neotree toggle<CR>", desc = "Toggle Neo-tree filesystem" },
+        { "<leader>tE", "<cmd>cd ~/ | Neotree toggle<CR>", desc = "Toggle Neo-tree at home" },
+        { "<leader>tr", "<cmd>cd / | Neotree toggle<CR>", desc = "Toggle Neo-tree at root" },
+        { "<leader>tg", "<cmd>Neotree toggle git_status<CR>", desc = "Toggle Neo-tree git status" },
     },
     opts = {
         close_if_last_window = true,
@@ -33,6 +33,10 @@ return {
                 mappings = {
                     ["h"] = "navigate_up",
                     ["l"] = "set_root",
+                    ["a"] = "add",
+                    ["r"] = "rename",
+                    ["y"] = "copy",
+                    ["d"] = "delete",
                 },
             },
             filtered_items = {

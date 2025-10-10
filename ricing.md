@@ -12,12 +12,10 @@ NO BLURRING OR SHADERS OR SHADOWS
 ### Hyprland
 
 - Possible key useful bindings
-- Check back autostart.conf
 - Check back Qt and environment.conf
 
 ### Hyprlock
 
-- Notify
 - Manage proper gpu drivers
 
 ### Hypridle
@@ -30,7 +28,6 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### NeoVim
 
-- Add LSP Mason plugin
 - Integrate with Whichkye and add descriptions to all
 - Plugins and videos for ideas
 - Shortcuts and vim motions
@@ -46,15 +43,11 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Kitty
 
-- Movable cursor
-
 ### Zsh, bash
 
 ### Zen Browser
 
 ### Login and logout menu
-
-### Metrics diagnostic
 
 ### Man pager NeoVim
 
