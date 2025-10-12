@@ -8,6 +8,7 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 - Scripts for workspaces, showoff and others
 - Look for cli tools
+- Remove Dolphin and install different file manager or config nvim
 
 ### Hyprland
 
@@ -35,7 +36,6 @@ NO BLURRING OR SHADERS OR SHADOWS
 - Look for useful shortcuts
 - Enhanced research with / and ?
 - Entire system with Vim motions ?
-- neotree issue with ctrl+d ctrl+u ctrl+b ctrl+f
 
 ### Swaync
 
