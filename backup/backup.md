@@ -11,6 +11,3 @@ Chalmers
 https://www.nerdfonts.com/cheat-sheet
 https://ieltsregistration.britishcouncil.org/
 https://ww3.soap2dayhdz.com/film/dexter-season-2-4001/#play-btn
-https://www.italiapersonalfinance.it/blog/wiki/
-https://www.italiapersonalfinance.it/blog/guida-primo-investimento/
-https://www.italiapersonalfinance.it/blog/conto-titoli-broker/
