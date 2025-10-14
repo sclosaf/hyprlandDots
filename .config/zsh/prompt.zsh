@@ -9,10 +9,10 @@ fi
 
 zstyle ':vcs_info:*' enable git
 zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:git:*' stagedstr "${VCS_MODIFIED_COLOR}+%f"
-zstyle ':vcs_info:git:*' unstagedstr "${VCS_MODIFIED_COLOR}%f"
-zstyle ':vcs_info:git:*' formats " ${VCS_CLEAN_COLOR}%b%f%c%u"
-zstyle ':vcs_info:git:*' actionformats " ${VCS_CLEAN_COLOR}%b%f${VCS_CONFLICTED_COLOR}|%a%f%c%u"
+zstyle ':vcs_info:git:*' stagedstr ""
+zstyle ':vcs_info:git:*' unstagedstr ""
+zstyle ':vcs_info:git:*' formats " ${VCS_CLEAN_COLOR}%b%f"
+zstyle ':vcs_info:git:*' actionformats " ${VCS_CLEAN_COLOR}%b%f${VCS_CONFLICTED_COLOR}|%a%f"
 
 PROMPT_CHAR="${PROMPT_CHAR_COLOR}$ >%f"
 
