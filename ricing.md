@@ -53,6 +53,8 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Wlogout
 
+### SDDM
+
 ### Btop
 
 ### zathura
