@@ -23,7 +23,6 @@ NO BLURRING OR SHADERS OR SHADOWS
 
 ### Waybar
 
-- Widget for cheatsheet
 - Script for other section copy complete widget with eww
 - Shutdown widget / system
 
