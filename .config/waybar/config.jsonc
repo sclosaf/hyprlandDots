@@ -27,7 +27,8 @@
         "backlight",
         "pulseaudio",
         "custom/other",
-        "clock"
+        "clock",
+        "custom/power"
     ],
 
     "custom/toggle":
@@ -35,6 +36,13 @@
         "tooltip": false,
         "format" : "󰣇 ",
         "on-click" : "~/.scripts/waybar/toggleBar.sh"
+    },
+
+    "custom/power":
+    {
+        "tooltip": false,
+        "format": " ",
+        "on-click": "wlogout -b 4"
     },
 
     "clock":
