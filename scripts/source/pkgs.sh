@@ -12,6 +12,7 @@ export packages=(
     "btop"
     "cava"
     "fastfetch"
+    "wlogout"
 
     "kitty"
 

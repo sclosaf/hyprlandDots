@@ -11,6 +11,7 @@ declare -A mapping=(
     [".config/btop"]="$HOME/.config/btop"
     [".config/cava"]="$HOME/.config/cava"
     [".config/zsh"]="$HOME/.config/zsh"
+    [".config/wlogout"]="$HOME/.config/wlogout"
 
     [".wallpapers/"]="$HOME/.wallpapers"
     [".scripts/"]="$HOME/.scripts"
