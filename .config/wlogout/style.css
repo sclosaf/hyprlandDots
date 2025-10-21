@@ -21,7 +21,7 @@ button {
     animation: gradient_f 20s ease-in infinite;
     border-radius: 80px;
     border: 0px;
-    transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    transition: all 0.1s ease-out, background-size 0.1s ease-out;
 }
 
 button:focus{
@@ -52,12 +52,31 @@ button span {
     background-color: #5d6a82;
 }
 
+#lock:focus,
+#lock:hover {
+    background-size: 25%;
+    background-color: #88c0d0;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #7891be;
+}
+
 #hibernate {
     margin: 10px;
     border-radius: 20px;
     background-image: image(url("icons/hibernate.png"));
     background-color: #5d6a82;
 }
+
+#hibernate:focus,
+#hibernate:hover {
+    background-size: 25%;
+    background-color: #88c0d0;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #7891be;
+}
+
 
 #shutdown {
     margin: 10px;
@@ -66,9 +85,27 @@ button span {
     background-color: #5d6a82;
 }
 
+#shutdown:focus,
+#shutdown:hover {
+    background-size: 25%;
+    background-color: #88c0d0;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #7891be;
+}
+
 #reboot {
     margin: 10px;
     border-radius: 20px;
     background-image: image(url("icons/reboot.png"));
     background-color: #5d6a82;
+}
+
+#reboot:focus,
+#reboot:hover {
+    background-size: 25%;
+    background-color: #88c0d0;
+    margin: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px #7891be;
 }
