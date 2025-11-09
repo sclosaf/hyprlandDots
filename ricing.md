@@ -1,43 +1,31 @@
 # Ricing
 
-REMOVE EXISTING UNUSED PACKAGES OR CONFIGURATION (clean install)
-
+Do a clean Install
 NO BLURRING OR SHADERS OR SHADOWS
 
 ## TO DO
-
-- Scripts for workspaces, showoff and others
 - Look for cli tools
 - Remove Dolphin and install different file manager or config nvim
 
 ### Hyprland
-
 - Possible key useful bindings
 - Check back Qt and environment.conf
 
 ### Hyprlock
-
 - Manage proper gpu drivers
 
 ### Hypridle
 
 ### Waybar
-
 - Script for other section copy complete widget with eww
 - Shutdown widget / system
 
 ### NeoVim
-
-- Integrate with Whichkye and add descriptions to all
 - Plugins and videos for ideas
-- Shortcuts and vim motions
-- Borders on LazyVim
 - Look for useful shortcuts
 - Enhanced research with / and ?
-- Entire system with Vim motions ?
 
 ### Swaync
-
 - TODO ?
 
 ### Kitty
