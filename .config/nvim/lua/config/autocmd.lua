@@ -50,3 +50,11 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         end
     end,
 })
+
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        local ok, _ = pcall(vim.cmd, "RenderMarkdownToggle")
+    end,
+})
+
