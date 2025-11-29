@@ -1,2 +1,0 @@
-- ()[https://github.com/HyDE-Project/HyDE/blob/master/Configs/.config/hypr/nvidia.conf]
-- ()[https://www.reddit.com/r/unixporn/comments/1jvsau8/hyprland_nord_theme_rice/]
