@@ -48,4 +48,5 @@ export packages=(
     "intel-media-driver"
     "vulkan-icd-loader"
     "linux-headers"
+    "egl-wayland"
 )
