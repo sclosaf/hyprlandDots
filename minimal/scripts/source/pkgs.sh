@@ -39,7 +39,7 @@ export packages=(
     "powertop"
     "luarocks"
 
-    "nvidia-dkms"
+    "nvidia-open"
     "nvidia-utils"
     "nvidia-settings"
     "nvidia-prime"
