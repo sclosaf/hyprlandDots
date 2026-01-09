@@ -38,4 +38,14 @@ export packages=(
     "upower"
     "powertop"
     "luarocks"
+
+    "nvidia-open"
+    "nvidia-utils"
+    "nvidia-settings"
+    "nvidia-prime"
+    "mesa"
+    "vulkan-intel"
+    "intel-media-driver"
+    "vulkan-icd-loader"
+    "linux-headers"
 )
