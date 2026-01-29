@@ -1,19 +1,16 @@
-https://mail.google.com/mail/u/0/#inbox
-https://mail.google.com/mail/u/1/#inbox
-https://uniweb.unipd.it
-https://stem.elearning.unipd.it/course/view.php?id=13823
-chatgpt
+Gmail
+Gmail
+Uniweb
+Stem
 deepseek
+chatpgt
 github
-https://eamidentity.britishcouncil.org/account/login?returnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dors2.newttp.app%26redirect_uri%3Dhttps%253A%252F%252Fieltsregistration.britishcouncil.org%252Fttp%252Fcallback%26response_type%3Dcode%26scope%3Dopenid%2520profile%2520email%2520offline_access%2520ors2.b2c.api%2520ielts-online.b2c.api%2520ukvi.b2c.api%2520ors2-modernisation.b2c.api%26state%3Dc2471d440e934d7aabb41c948c876026%26code_challenge%3D4xuIJFSqmsT0cSDLqIo3tilULF2KJBsh39oVIB6NL4A%26code_challenge_method%3DS256%26response_mode%3Dquery%26ui_locales%3Den-GB
-https://flixrave.me/dexter-resurrection-2025/
-https://flixrave.me/hannibal/
-https://www.amazon.it/amazonprime
-https://voidlinux.org/download/
-https://www.google.com/search?q=papers+cybersecurity&client=firefox-b-d&sca_esv=7cb5a2c0938f91b5&sxsrf=AE3TifNMLa_kIasoDVr3Y3YeAs6Rlpb01g%3A1764192791095&ei=F3InafC4BfOI9u8P34bWwQI&oq=papers+cyb&gs_lp=Egxnd3Mtd2l6LXNlcnAiCnBhcGVycyBjeWIqAggAMgYQABgWGB4yBhAAGBYYHjIIEAAYFhgKGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHkjSFVALWOENcAF4AZABAJgBcKAB6AOqAQMzLjK4AQPIAQD4AQGYAgagAqcEwgIKEAAYsAMY1gQYR8ICCBAAGIAEGMsBwgIEECMYJ8ICDRAuGIAEGLEDGBQYhwLCAgoQABiABBgUGIcCwgIFEAAYgATCAgkQABiABBgKGAvCAgkQABgWGMcDGB6YAwCIBgGQBgiSBwMxLjWgB-kksgcDMC41uAehBMIHBTItNC4yyAcu&sclient=gws-wiz-serp
-https://dl.acm.org/
-https://www.youtube.com/watch?v=iGEpELr5MFk
 
-https://stem.elearning.unipd.it/pluginfile.php/1180326/mod_resource/content/1/LEZIONE%207%209.12.2021.pdf
-https://stem.elearning.unipd.it/pluginfile.php/1180328/mod_resource/content/1/fde%2020211210.pdf
-https://stem.elearning.unipd.it/pluginfile.php/1180327/mod_resource/content/3/20201202%20lezione%20gate%20comune%20corretta.pdf
+https://www.universityadmissions.se
+https://dans.stads.dk/SelfUserRegistration/faces/WelcomePage.jspx
+https://flixrave.lol/the-big-bang-theory-2007/
+https://overthewire.org/wargames/natas/natas26.html
+https://map.jacobsjo.eu/?datapacks=modrinth:terralith,modrinth:tectonic&seed=4662241359389547783
+
+unipd tesi
+
