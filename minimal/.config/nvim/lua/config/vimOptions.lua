@@ -36,7 +36,6 @@ vim.opt.showmatch = true
 vim.opt.matchtime = 5
 
 vim.opt.linebreak = true
-vim.opt_local.textwidth = vim.api.nvim_win_get_width(0) - 2
 
 vim.opt.backspace = { "indent", "eol", "start" }
 vim.opt.clipboard = "unnamedplus"
