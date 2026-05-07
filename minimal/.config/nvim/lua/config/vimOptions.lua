@@ -37,7 +37,6 @@ vim.opt.smartindent = true
 vim.opt.showmatch = true
 vim.opt.matchtime = 5
 
-vim.opt.wrap = true
 vim.opt.linebreak = true
 vim.opt_local.textwidth = vim.api.nvim_win_get_width(0) - 2
 

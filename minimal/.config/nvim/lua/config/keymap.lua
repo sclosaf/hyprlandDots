@@ -23,9 +23,6 @@ km("v", "J", ":m '>+1<CR>gv=gv")
 km("v", "K", ":m '<-2<CR>gv=gv")
 km("n", "<C-n>", ":Telescope colorscheme<CR>")
 
-km("n", "<C-d>", "<C-f>zz")
-km("n", "<C-u>", "<C-b>zz")
-
 km("n", "n", "nzzzv")
 km("n", "N", "Nzzzv")
 
