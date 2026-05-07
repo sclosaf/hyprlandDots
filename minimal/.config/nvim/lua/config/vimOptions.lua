@@ -19,8 +19,6 @@ vim.opt.sidescrolloff = 3
 vim.opt.splitbelow = true
 vim.opt.splitright = true
 
-vim.opt.scroll = 1
-
 vim.opt.background = "dark"
 if vim.fn.has("termguicolors") == 1 then
     vim.opt.termguicolors = true
