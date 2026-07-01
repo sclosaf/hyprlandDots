@@ -1,3 +1,5 @@
+export ZDOTDIR="$HOME/.config/zsh"
+
 source "$HOME/.config/zsh/aliases.zsh"
 source "$HOME/.config/zsh/config.zsh"
 source "$HOME/.config/zsh/exports.zsh"
