@@ -133,7 +133,7 @@ window-width=1290
 [org/gnome/Ptyxis]
 default-profile-uuid='1a800f8a01bd6189261562af6a1b63c3'
 profile-uuids=['1a800f8a01bd6189261562af6a1b63c3']
-window-size=(uint32 59, uint32 71)
+window-size=(uint32 89, uint32 88)
 
 [org/gnome/Showtime/State]
 is-maximized=true
@@ -166,7 +166,7 @@ size=(870, 690)
 
 [org/gnome/control-center]
 last-panel='keyboard'
-window-state=(1284, 782, false)
+window-state=(1271, 1557, false)
 
 [org/gnome/desktop/a11y/magnifier]
 cross-hairs-length=58
@@ -539,8 +539,8 @@ custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybin
 home=['<Shift><Super>e']
 logout=@as []
 screensaver=['<Shift><Super>l']
-search=['<Shift><Control>a']
 shutdown=['<Control><Alt>Delete']
+www=['<Shift><Super>w']
 
 [org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0]
 binding='<Shift><Super>q'
@@ -561,13 +561,13 @@ name=''
 power-button-action='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'arch-update.desktop': <{'position': <0>}>, 'arch-update-tray.desktop': <{'position': <1>}>, 'Alacritty.desktop': <{'position': <2>}>, 'org.gnome.SimpleScan.desktop': <{'position': <3>}>, 'org.gnome.Showtime.desktop': <{'position': <4>}>, 'org.gnome.Calculator.desktop': <{'position': <5>}>, 'org.gnome.Snapshot.desktop': <{'position': <6>}>, 'bssh.desktop': <{'position': <7>}>, 'nvidia-settings.desktop': <{'position': <8>}>, 'Utilities': <{'position': <9>}>, 'System': <{'position': <10>}>, 'net.nokyan.Resources.desktop': <{'position': <11>}>, 'bvnc.desktop': <{'position': <12>}>, 'avahi-discover.desktop': <{'position': <13>}>, 'btop.desktop': <{'position': <14>}>, 'org.cachyos.KernelManager.desktop': <{'position': <15>}>, 'lstopo.desktop': <{'position': <16>}>}, {'cachyos-pi.desktop': <{'position': <0>}>, 'org.gnome.Evince.desktop': <{'position': <1>}>, 'org.gnome.Extensions.desktop': <{'position': <2>}>, 'org.gnome.Meld.desktop': <{'position': <3>}>, 'net.lutris.Lutris.desktop': <{'position': <4>}>, 'org.gnome.PowerStats.desktop': <{'position': <5>}>, 'qv4l2.desktop': <{'position': <6>}>, 'qvidcap.desktop': <{'position': <7>}>, 'nvim.desktop': <{'position': <8>}>, 'net.davidotek.pupgui2.desktop': <{'position': <9>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <10>}>, 'assistant.desktop': <{'position': <11>}>, 'qdbusviewer.desktop': <{'position': <12>}>, 'linguist.desktop': <{'position': <13>}>, 'designer.desktop': <{'position': <14>}>, 'kitty.desktop': <{'position': <15>}>}, {'org.cachyos.scx-manager.desktop': <{'position': <0>}>, 'vim.desktop': <{'position': <1>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <2>}>}]
+app-picker-layout=[{'arch-update.desktop': <{'position': <0>}>, 'arch-update-tray.desktop': <{'position': <1>}>, 'org.gnome.SimpleScan.desktop': <{'position': <2>}>, 'org.gnome.Showtime.desktop': <{'position': <3>}>, 'org.gnome.Calculator.desktop': <{'position': <4>}>, 'org.gnome.Snapshot.desktop': <{'position': <5>}>, 'bssh.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'Utilities': <{'position': <8>}>, 'System': <{'position': <9>}>, 'net.nokyan.Resources.desktop': <{'position': <10>}>, 'bvnc.desktop': <{'position': <11>}>, 'avahi-discover.desktop': <{'position': <12>}>, 'btop.desktop': <{'position': <13>}>, 'org.cachyos.KernelManager.desktop': <{'position': <14>}>, 'lstopo.desktop': <{'position': <15>}>}, {'cachyos-pi.desktop': <{'position': <0>}>, 'org.gnome.Evince.desktop': <{'position': <1>}>, 'org.gnome.Extensions.desktop': <{'position': <2>}>, 'org.gnome.Meld.desktop': <{'position': <3>}>, 'net.lutris.Lutris.desktop': <{'position': <4>}>, 'org.gnome.PowerStats.desktop': <{'position': <5>}>, 'qv4l2.desktop': <{'position': <6>}>, 'qvidcap.desktop': <{'position': <7>}>, 'nvim.desktop': <{'position': <8>}>, 'net.davidotek.pupgui2.desktop': <{'position': <9>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <10>}>, 'assistant.desktop': <{'position': <11>}>, 'qdbusviewer.desktop': <{'position': <12>}>, 'linguist.desktop': <{'position': <13>}>, 'designer.desktop': <{'position': <14>}>, 'kitty.desktop': <{'position': <15>}>, 'org.gnome.TextEditor.desktop': <{'position': <16>}>}, {'org.cachyos.scx-manager.desktop': <{'position': <0>}>, 'vim.desktop': <{'position': <1>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <2>}>}]
 command-history=['smb://172.22.22.226/data', 'culo', 'ls']
 disable-extension-version-validation=true
 disable-user-extensions=false
 disabled-extensions=['i3-like-shortcuts@extension', 'just-perfection-desktop@just-perfection', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'system-monitor-next@paradoxxx.zero.gmail.com', 'openbar@neuromorph', 'tilingshell@ferrarodomenico.com', 'weatheroclock@CleoMenezesJr.github.io', 'Vitals@CoreCoding.com', 'useless-gaps@pimsnel.com']
 enabled-extensions=['arch-update@RaphaelRochet', 'caffeine@patapon.info', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'mediacontrols@cliffniff.github.com', 'tophat@fflewddur.github.io', 'steal-my-focus-window@steal-my-focus-window', 'no-overview@fthx', 'pomodoro@arun.codito.in', 'openweather-extension@jenslody.de', 'static-workspace-background@CleoMenezesJr.github.io', 'forge@jmmaranan.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Ptyxis.desktop', 'com.shellyorg.shelly.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.TextEditor.desktop', 'org.gnome.SystemMonitor.desktop', 'cachyos-hello.desktop', 'org.gnome.Settings.desktop']
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']
 last-selected-power-profile='performance'
 welcome-dialog-last-shown-version='49.2'
 
@@ -611,11 +611,12 @@ indicator-position-index=0
 indicator-position-max=3
 show-indicator='always'
 toggle-shortcut=['<Super>ugrave']
-user-enabled=true
+user-enabled=false
 
 [org/gnome/shell/extensions/forge]
 css-last-update=uint32 37
 css-updated='1782926143547'
+float-always-on-top-enabled=true
 focus-border-toggle=true
 focus-on-hover-enabled=true
 move-pointer-focus-enabled=true
@@ -666,7 +667,7 @@ window-swap-right=@as []
 window-swap-up=@as []
 window-toggle-always-float=@as []
 window-toggle-float=@as []
-workspace-active-tile-toggle=['<Shift><Super>w']
+workspace-active-tile-toggle=['<Super>t']
 
 [org/gnome/shell/extensions/just-perfection]
 panel-in-overview=true
