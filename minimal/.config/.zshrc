@@ -1,10 +1,10 @@
 export ZDOTDIR="$HOME/.config/zsh"
 
-source "$HOME/.config/zsh/aliases.zsh"
-source "$HOME/.config/zsh/config.zsh"
-source "$HOME/.config/zsh/exports.zsh"
-source "$HOME/.config/zsh/functions.zsh"
-source "$HOME/.config/zsh/plugins.zsh"
-source "$HOME/.config/zsh/prompt.zsh"
+source "$ZDOTDIR/aliases.zsh"
+source "$ZDOTDIR/config.zsh"
+source "$ZDOTDIR/exports.zsh"
+source "$ZDOTDIR/functions.zsh"
+source "$ZDOTDIR/plugins.zsh"
+source "$ZDOTDIR/prompt.zsh"
 
 build_prompts

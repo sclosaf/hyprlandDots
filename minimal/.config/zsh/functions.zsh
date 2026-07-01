@@ -1,17 +1,32 @@
+PLUGINS_DIR="$ZDOTDIR/plugins"
+mkdir -p "$PLUGINS_DIR"
+
 function zsh_add_file()
 {
     [ -f "$ZDOTDIR/$1" ] && source "$ZDOTDIR/$1"
 }
 
-function zsh_add_plugin()
-{
-    PLUGIN_NAME=$(echo $1 | cut -d "/" -f 2)
+function zsh_add_plugin() {
+    local repo=$1
+    local name=$(basename "$repo")
 
-    if [ -d "$ZDOTDIR/plugins/$PLUGIN_NAME" ]; then
-        zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.plugin.zsh" || \
-        zsh_add_file "plugins/$PLUGIN_NAME/$PLUGIN_NAME.zsh"
-    else
-        git clone "https://github.com/$1.git" "$ZDOTDIR/plugins/$PLUGIN_NAME"
+    local dir="$PLUGINS_DIR/$name"
+
+    if [ -d "$dir/.git" ]; then
+        return
+    fi
+
+    git clone "https://github.com/$repo.git" "$dir"
+}
+
+function zsh_load_plugin() {
+    local name=$1
+    local dir="$PLUGINS_DIR/$name"
+
+    if [ -f "$dir/$name.plugin.zsh" ]; then
+        source "$dir/$name.plugin.zsh"
+    elif [ -f "$dir/$name.zsh" ]; then
+        source "$dir/$name.zsh"
     fi
 }
 
