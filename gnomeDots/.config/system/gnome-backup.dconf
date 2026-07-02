@@ -119,16 +119,16 @@ recent-connections=[{'adapter': '80:C5:F2:1E:36:9E', 'address': '2C:FD:B3:3B:AF:
 recent-characters=['È']
 
 [org/gnome/Console]
-last-window-maximised=true
-last-window-size=(630, 692)
+last-window-maximised=false
+last-window-size=(855, 1037)
 
 [org/gnome/Disks]
 image-dir-uri='file:///home/tom/Downloads'
 
 [org/gnome/Extensions]
-window-height=1580
+window-height=1037
 window-maximized=false
-window-width=1290
+window-width=568
 
 [org/gnome/Ptyxis]
 default-profile-uuid='1a800f8a01bd6189261562af6a1b63c3'
@@ -165,8 +165,8 @@ panel-id='world'
 size=(870, 690)
 
 [org/gnome/control-center]
-last-panel='keyboard'
-window-state=(1271, 1557, false)
+last-panel='mouse'
+window-state=(1274, 1561, false)
 
 [org/gnome/desktop/a11y/magnifier]
 cross-hairs-length=58
@@ -180,7 +180,7 @@ name='X-Pardus-Apps.directory'
 translate=true
 
 [org/gnome/desktop/app-folders/folders/System]
-apps=['org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.SystemMonitor.desktop', 'org.gnome.tweaks.desktop']
+apps=['org.gnome.baobab.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Logs.desktop', 'org.freedesktop.MalcontentControl.desktop', 'org.gnome.SystemMonitor.desktop']
 name='X-GNOME-Shell-System.directory'
 translate=true
 
@@ -213,7 +213,7 @@ play-sound=true
 [org/gnome/desktop/input-sources]
 mru-sources=[('xkb', 'it'), ('xkb', 'us')]
 show-all-sources=false
-sources=[('xkb', 'it'), ('xkb', 'us')]
+sources=[('xkb', 'it')]
 xkb-options=@as []
 
 [org/gnome/desktop/interface]
@@ -315,6 +315,10 @@ accel-profile='flat'
 speed=0.72839506172839497
 
 [org/gnome/desktop/peripherals/touchpad]
+disable-while-typing=true
+natural-scroll=false
+send-events='enabled'
+speed=0.35398230088495586
 tap-to-click=true
 two-finger-scrolling-enabled=true
 
@@ -426,8 +430,8 @@ delay=0
 include-pointer=true
 
 [org/gnome/meld/window-state]
-height=301
-width=543
+height=731
+width=1274
 
 [org/gnome/mutter]
 dynamic-workspaces=false
@@ -454,7 +458,7 @@ migrated-gtk-settings=true
 show-create-link=true
 
 [org/gnome/nautilus/window-state]
-initial-size=(1271, 775)
+initial-size=(1274, 778)
 initial-size-file-chooser=(948, 1152)
 maximized=false
 
@@ -510,6 +514,9 @@ last-folder-path='/home/tom/Downloads'
 [org/gnome/portal/filechooser/org.chromium.Chromium]
 last-folder-path='/home/tom/Downloads/Crush_80_【RGB】Json/Crush 80 【RGB】Json'
 
+[org/gnome/portal/filechooser/org.gnome.Nautilus]
+last-folder-path='/home/zero/Downloads'
+
 [org/gnome/portal/filechooser/org.gnome.Settings]
 last-folder-path='/home/zero/Pictures/Screenshots'
 
@@ -558,17 +565,18 @@ command=''
 name=''
 
 [org/gnome/settings-daemon/plugins/power]
+ambient-enabled=true
 power-button-action='suspend'
 
 [org/gnome/shell]
-app-picker-layout=[{'arch-update.desktop': <{'position': <0>}>, 'arch-update-tray.desktop': <{'position': <1>}>, 'org.gnome.SimpleScan.desktop': <{'position': <2>}>, 'org.gnome.Showtime.desktop': <{'position': <3>}>, 'org.gnome.Calculator.desktop': <{'position': <4>}>, 'org.gnome.Snapshot.desktop': <{'position': <5>}>, 'bssh.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'Utilities': <{'position': <8>}>, 'System': <{'position': <9>}>, 'net.nokyan.Resources.desktop': <{'position': <10>}>, 'bvnc.desktop': <{'position': <11>}>, 'avahi-discover.desktop': <{'position': <12>}>, 'btop.desktop': <{'position': <13>}>, 'org.cachyos.KernelManager.desktop': <{'position': <14>}>, 'lstopo.desktop': <{'position': <15>}>}, {'cachyos-pi.desktop': <{'position': <0>}>, 'org.gnome.Evince.desktop': <{'position': <1>}>, 'org.gnome.Extensions.desktop': <{'position': <2>}>, 'org.gnome.Meld.desktop': <{'position': <3>}>, 'net.lutris.Lutris.desktop': <{'position': <4>}>, 'org.gnome.PowerStats.desktop': <{'position': <5>}>, 'qv4l2.desktop': <{'position': <6>}>, 'qvidcap.desktop': <{'position': <7>}>, 'nvim.desktop': <{'position': <8>}>, 'net.davidotek.pupgui2.desktop': <{'position': <9>}>, 'org.qbittorrent.qBittorrent.desktop': <{'position': <10>}>, 'assistant.desktop': <{'position': <11>}>, 'qdbusviewer.desktop': <{'position': <12>}>, 'linguist.desktop': <{'position': <13>}>, 'designer.desktop': <{'position': <14>}>, 'kitty.desktop': <{'position': <15>}>, 'org.gnome.TextEditor.desktop': <{'position': <16>}>}, {'org.cachyos.scx-manager.desktop': <{'position': <0>}>, 'vim.desktop': <{'position': <1>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <2>}>}]
+app-picker-layout=[{'org.gnome.clocks.desktop': <{'position': <0>}>, 'org.gnome.Showtime.desktop': <{'position': <1>}>, 'org.gnome.Calculator.desktop': <{'position': <2>}>, 'eos-apps-info.desktop': <{'position': <3>}>, 'bssh.desktop': <{'position': <4>}>, 'eos-log-tool.desktop': <{'position': <5>}>, 'Utilities': <{'position': <6>}>, 'eos-quickstart.desktop': <{'position': <7>}>, 'System': <{'position': <8>}>, 'eos-update.desktop': <{'position': <9>}>, 'bvnc.desktop': <{'position': <10>}>, 'avahi-discover.desktop': <{'position': <11>}>, 'firewall-config.desktop': <{'position': <12>}>, 'yad-icon-browser.desktop': <{'position': <13>}>, 'lstopo.desktop': <{'position': <14>}>, 'gnome-nettool.desktop': <{'position': <15>}>}, {'reflector-simple.desktop': <{'position': <0>}>, 'org.gnome.Evince.desktop': <{'position': <1>}>, 'org.gnome.Extensions.desktop': <{'position': <2>}>, 'stoken-gui.desktop': <{'position': <3>}>, 'org.gnome.PowerStats.desktop': <{'position': <4>}>, 'qv4l2.desktop': <{'position': <5>}>, 'qvidcap.desktop': <{'position': <6>}>, 'stoken-gui-small.desktop': <{'position': <7>}>, 'org.gnome.Usage.desktop': <{'position': <8>}>, 'uxterm.desktop': <{'position': <9>}>, 'xterm.desktop': <{'position': <10>}>, 'yad-settings.desktop': <{'position': <11>}>, 'org.gnome.TextEditor.desktop': <{'position': <12>}>, 'nvim.desktop': <{'position': <13>}>, 'org.pulseaudio.pavucontrol.desktop': <{'position': <14>}>, 'vim.desktop': <{'position': <15>}>}]
 command-history=['smb://172.22.22.226/data', 'culo', 'ls']
 disable-extension-version-validation=true
 disable-user-extensions=false
 disabled-extensions=['i3-like-shortcuts@extension', 'just-perfection-desktop@just-perfection', 'system-monitor@gnome-shell-extensions.gcampax.github.com', 'system-monitor-next@paradoxxx.zero.gmail.com', 'openbar@neuromorph', 'tilingshell@ferrarodomenico.com', 'weatheroclock@CleoMenezesJr.github.io', 'Vitals@CoreCoding.com', 'useless-gaps@pimsnel.com']
 enabled-extensions=['arch-update@RaphaelRochet', 'caffeine@patapon.info', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'blur-my-shell@aunetx', 'mediacontrols@cliffniff.github.com', 'tophat@fflewddur.github.io', 'steal-my-focus-window@steal-my-focus-window', 'no-overview@fthx', 'pomodoro@arun.codito.in', 'openweather-extension@jenslody.de', 'static-workspace-background@CleoMenezesJr.github.io', 'forge@jmmaranan.com']
-favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'org.gnome.Settings.desktop']
-last-selected-power-profile='performance'
+favorite-apps=['firefox.desktop', 'org.gnome.Nautilus.desktop', 'kitty.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Settings.desktop']
+last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='49.2'
 
 [org/gnome/shell/app-switcher]
@@ -615,14 +623,14 @@ user-enabled=false
 
 [org/gnome/shell/extensions/forge]
 css-last-update=uint32 37
-css-updated='1782926143547'
-float-always-on-top-enabled=true
+css-updated='1782941199996'
+float-always-on-top-enabled=false
 focus-border-toggle=true
 focus-on-hover-enabled=true
 move-pointer-focus-enabled=true
 tiling-mode-enabled=true
 window-gap-hidden-on-single=true
-window-gap-size=uint32 3
+window-gap-size=uint32 2
 window-gap-size-increment=uint32 1
 window-overrides-reload-trigger=uint32 1772192603
 workspace-skip-tile=''
